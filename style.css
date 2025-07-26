@@ -1,0 +1,262 @@
+@font-face {
+  font-family: poppins;
+  src: url(/fonts/Poppins-Medium.ttf);
+}   
+@font-face {
+  font-family: figtree ;
+  src: url(/fonts/LeagueSpartan-VariableFont_wght.ttf);
+}
+    :root {
+  --dark-grey:  #242424;
+  --lightgrey: #f8f8f8;
+  --moss-green: #457A00;
+  --rust-brown: #7a2f00 ;
+  
+
+}
+
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+          border: 0px solid blue;
+font-family: figtree;
+    }
+    html,body{
+      width: 100%;
+      color: var(--dark-grey);
+    }
+    body {
+      font-family: inter, sans-serif;
+      color: var(--text-on-light);
+      background: var(--light); /* Warmer background */
+    }
+    .bg{
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      background-image:url(images/94f55a_faf3aa3282134f2a96e71420436316d1~mv2.jpg);
+      background-size: cover;
+      background-position: center;
+      z-index: -10;
+      top: 0;
+      left: 0;
+    }
+    .body{
+      width: 100%;
+      clip-path: inset(0 0 0 0); /* Same effect as overflow: hidden but may work better with animations */
+    }
+    
+    .lightbg{
+      background: var(--light);
+    }
+    .headings{
+      color: var(--accent);
+      text-align: center;
+      text-transform: uppercase;
+      font-family: poppins;
+      font-weight: 900;
+      font-size: 20px;
+      width: fit-content;
+      letter-spacing: 5px;
+      border-bottom: 3px solid var(--accent);
+      justify-self: center;
+      margin-bottom: 10px;
+      padding:0px  3px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      background: var(--rust-brown);
+      color: white;
+      padding: 1rem 2rem;
+      top: 0;
+      z-index: 999;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      color: white; 
+      text-decoration: none;
+      font-weight: 500;
+      }
+      
+    nav a:hover {
+      color: var(--accent);
+      text-decoration: underline; 
+      
+    }
+    @media (max-width: 768px) {
+      header nav {
+        display: none;
+        }
+      header .menu-btn {
+        display: block; 
+        font-size: 1.5rem;
+        cursor: pointer; 
+        
+      }
+      nav.mobile {
+        display: flex;
+        flex-direction: column;
+        background: var(--moss-green); padding: 1rem; 
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70%;
+        z-index: 100000000;
+        height: 1000px;
+      }
+      nav.mobile a { 
+        margin: 0.5rem 0; 
+        
+      }
+    }
+ .hero {
+   background: rgba(0, 0, 0, 0.3);
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      animation: fadeIn 2s ease-in-out;
+      font-weight: 500;
+    }
+
+    .hero p {
+      margin-top: 1rem;
+      animation: fadeIn 3s ease-in-out;
+            line-height: 20px;
+
+    }
+    .hero button{
+      display: flex;
+      background: var(--moss-green);
+      border: none;
+      color: #fff;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      align-items: center;
+      justify-self: center;
+      margin-top: 1rem;
+      font-size: 15px;
+      animation: fadeIn 4s ease-in-out;
+
+    }
+    #cta{
+      background: var(--moss-green);
+      padding: 50px 0px;
+      color: #fff;  
+      text-align: center;
+    }
+    #cta .text{
+      padding: 0px 25px;
+    }
+    #cta h2{
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    #cta p{
+      line-height: 20px;
+      padding: 10px;
+      font-weight: 400;
+    }
+    #cta form{
+      padding: 20px 45px;
+      text-align: left;
+    }
+    
+    #cta form input{
+      width: 100%;
+      padding: 20px 20px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+    #cta form button{
+      padding: 20px;
+      width: 100%;
+      background: var(--rust-brown);
+      color: #fff;
+      font-size: 18px;
+    }
+    #cta .img{
+      background-image: url(/images/newipadagain.png);
+      height: 300px;
+      width: 100%;
+      background-size: cover;
+    }
+    #about{
+      background: var(--lightgrey);
+      padding: 50px 45px;
+    }
+    #about .heading{
+      text-transform: uppercase;
+    }
+    #about h2{
+      margin-top: 10px;
+      font-weight: 350;
+      font-size: 2rem;
+    }
+    #about h2 span{
+      color: var(--moss-green);
+    }
+    #about .subtext{
+      font-weight: 500;
+      margin-top: 8px;
+    }
+    #about button{
+      background: var(--moss-green);
+      padding: 20px 40px;
+      color: #fff;
+      margin-top: 8px;
+      font-size: 15px;
+      font-weight: 400;
+    }
+    #about img{
+      border: 1px solid var(--dark-grey);
+      margin-top: 10px;
+    }
+    #whyus{
+      padding: 50px 0px;
+      text-align: center;
+      background: rgba(225, 255, 183, 1);
+    }
+    #whyus h2,#works h2{
+      margin-top: 10px;
+      font-weight: 400;
+      font-size: 2rem;
+      padding: 2px;
+    }
+    #whyus h2 span,#works h2 span{
+      color: var(--moss-green);
+      display: block;
+    }
+    #whyus .subtext{
+      font-weight: 500;
+      margin-top: 8px;
+      padding: 0px 40px;
+      font-size: 13px;
+      line-height: 13px;
+    }
+    #works{
+      padding: 50px 0px;
+      background: var(--lightgrey);
+    }
+    #works h2{
+      text-align: center;
+    }
+    #works h2 span{
+      display: inline-block;
+    }
