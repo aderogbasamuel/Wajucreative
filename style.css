@@ -54,7 +54,6 @@ font-family: figtree;
     }
     .headings{
       color: var(--accent);
-      text-align: center;
       text-transform: uppercase;
       font-family: poppins;
       font-weight: 900;
@@ -81,13 +80,24 @@ font-family: figtree;
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
+      display: inline-flex;
+    } .menu-btn{
+      display: none;
     }
-
+.closebtn{
+  font-size: 50px;
+  color: #fff;
+  font-weight: 100;
+  text-align: right;
+  display: none;
+}
     nav a {
       margin-left: 1rem;
       color: white; 
       text-decoration: none;
       font-weight: 500;
+      font-size: 18px;
+      text-transform: uppercase;
       }
       
     nav a:hover {
@@ -105,6 +115,9 @@ font-family: figtree;
         cursor: pointer; 
         
       }
+      nav.mobile .closebtn{
+        display: block;
+      }
       nav.mobile {
         display: flex;
         flex-direction: column;
@@ -115,6 +128,11 @@ font-family: figtree;
         width: 70%;
         z-index: 100000000;
         height: 1000px;
+        padding-left: 50px;
+        padding-top: 20px;
+        text-align: left;
+
+
       }
       nav.mobile a { 
         margin: 0.5rem 0; 
@@ -193,9 +211,11 @@ font-family: figtree;
     }
     #cta .img{
       background-image: url(/images/newipadagain.png);
-      height: 300px;
+      height: 350px;
       width: 100%;
       background-size: cover;
+      transform: translateX(-0px);
+      background-position: center;
     }
     #about{
       background: var(--lightgrey);
@@ -232,6 +252,10 @@ font-family: figtree;
       padding: 50px 0px;
       text-align: center;
       background: rgba(225, 255, 183, 1);
+            clip-path: inset(0 0 0 0); /* Same effect as overflow: hidden but may work better with animations */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     #whyus h2,#works h2{
       margin-top: 10px;
@@ -250,13 +274,112 @@ font-family: figtree;
       font-size: 13px;
       line-height: 13px;
     }
+      @keyframes moveright {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0px);
+
+  }
+     }
+       @keyframes moveleft {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(0px);
+
+  }
+     }
+     .list{
+             clip-path: inset(0 0 0 0); /* Same effect as overflow: hidden but may work better with animations */
+             
+             text-align: center;
+             border: 0px solid red;
+             width: 300px;
+            position: relative;
+            list-style: none;
+            margin-top: 10px;
+            
+     }
+    #whyus .list li{
+      padding: 10px 20px;
+      border-radius: 100px;
+      text-align: center;
+      width: 100%;
+      color: #fff;
+      margin-bottom: 10px;
+      font-size: 15px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #whyus .list li:nth-child(even){
+      animation: moveleft linear forwards;
+      border: var(--dark-grey) 1px solid;
+      animation-timeline: view();
+      color: #fff;
+      animation-range: entry 0 cover 40%;
+      font-weight: 400;
+      transition: 0.3s;
+      background: var(--moss-green);
+    }
+      #whyus .list li:nth-child(odd) {
+    
+    animation: moveright linear forwards;
+    background: var(--rust-brown);
+    border: var(--dark-grey) 1px solid;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    font-weight: 500;
+    transition: 0.3s;
+  }
     #works{
       padding: 50px 0px;
       background: var(--lightgrey);
     }
     #works h2{
       text-align: center;
+      padding: 5px;
+      font-size: 35px;
     }
+   
     #works h2 span{
       display: inline-block;
+    }
+    #works .card{
+      padding: 20px 40px;
+      text-align: left;
+      justify-content: left;
+    }
+     #works .card h2 {
+   text-align: left;
+   padding: 5px 0px;
+ }
+    #works .card img{
+      width: 100%;
+    }
+    #works .card a{
+      color: #fff;
+padding: 10px;
+display: block;
+width: fit-content;
+padding: 20px 40px;
+color: #fff;
+margin-top: 8px;
+font-size: 15px;
+font-weight: 400;
+border: none;
+text-decoration: none;
+text-transform: uppercase;
+    }
+    #works .card:nth-child(even) a{
+      background: var(--rust-brown);
+
+    }
+    #works .card:nth-child(odd) a{
+      background: var(--moss-green);
+      
     }
