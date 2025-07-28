@@ -387,5 +387,95 @@ text-transform: uppercase;
           #cta form{
               
           }
-          
+          #works .card{
+            display: flex;
+            align-items: stretch;
+          }
+          #whyus{
+            padding: 50px 50px;
+
+          }
+          .list .row{
+            display: flex;
+            gap: 40px;
+          }
 }
+section#features{
+  background: var(--rust-brown);
+  color: #fff;
+  padding: 30px 0px;
+}
+section#features h2{
+  font-weight: 600;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+section#portfolio,section#testimonials{
+  background:var(--lightgrey);
+  text-align: center;
+  padding: 50px 0px;
+}
+section#portfolio h2,section#testimonials h2{
+  padding: 0px 30px;
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+section#portfolio a{
+  background: var(--moss-green);
+padding: 20px 40px;
+color: #fff;
+margin-top: 8px;
+font-size: 15px;
+font-weight: 400;
+text-decoration: none;
+display: block;
+width: fit-content;
+justify-self: center;
+}
+section#testimonials{
+  background: var(--rust-brown);
+  color: #fff;
+}
+section#testimonials .text{
+  text-align: left;
+  padding: 25px;
+}
+section#testimonials .text .heading{
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+margin-top: 25px;
+}
+section#testimonials .text .client_testimonial{
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+}
+section#testimonials .text .client_name{
+  font-size: 18px;
+  margin-top: 30px;
+}
+#how-we-work{
+      padding: 50px 0px;
+      background: var(--lightgrey);
+    }
+    #how-we-work h2{
+      text-align: center;
+      padding: 5px;
+      font-size: 35px;
+      margin-top: 10px;
+font-weight: 400;
+font-size: 2rem;
+    }
+   
+    #how-we-work h2 span{
+      display: inline-block;
+            color: var(--moss-green);
+
+    }
+    #discovery{
+      padding: 50px 30px;
+      background: rgba(220, 118, 7, 0.9);
+    }
