@@ -9,9 +9,15 @@
   
   <!-- HTML -->
   
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="features.css" />
 </head>
 
 <body>
@@ -133,11 +139,87 @@ like my brand is all over the place?</li>
 </section>
 <section id="features">
   <h2>OUR WORK AND AMAZING CLIENTS HAVE BEEN FEATURED ON</h2>
+  <div class="slider">
+  <div class="slide-track">
+    <div class="slide">
+      <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png" alt="">
+    </div>
+  </div>
+</div>
 </section>
 <section id="portfolio">
   <p>EXPLORE OUR CREATIVE PORTFOLIO</p>
   <h2>Take a look at some of the brands I’ve had the honor to help elevate.</h2>
   <a href="#">Explore Portfolio</a>
+  <div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"></div>
+    <div class="swiper-slide"></div>
+    <div class="swiper-slide"></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+</div>
+
 </section>
 <section id="testimonials">
   <p>Testimonials</p>
@@ -156,29 +238,93 @@ like my brand is all over the place?</li>
 </section>
 <section id="how-we-work">
   <h2>A Quick Look at
-How We Work <span>Together</span></h2>
+<span>How We Work Together</span></h2>
+
+<div class="toggle-container">
+  <div class="toggle-header" onclick="toggleText(this)">
+    <span>Discovery Call — Let’s Talk.</span>
+    <span class="arrow">▼</span>
+  </div>
+  <div class="toggle-content">
+    <p>
+We start with a free 20-minute call to dive into your business, your vision, and where you’re feeling stuck. This is where I learn your goals and start mapping out the best direction for your brand.</p>
+  </div>
+</div>
+<div class="toggle-container">
+  <div class="toggle-header" onclick="toggleText(this)">
+    <span>Proposal — Your Custom Plan.</span>
+    <span class="arrow">▼</span>
+  </div>
+  <div class="toggle-content">
+    <p>
+We start with a free 20-minute call to dive into your business, your vision, and where you’re feeling stuck. This is where I learn your goals and start mapping out the best direction for your brand.</p>
+  </div>
+</div>
+
+<div class="toggle-container">
+  <div class="toggle-header" onclick="toggleText(this)">
+    <span>Agreement & Invoice — We Make It Official.</span>
+    <span class="arrow">▼</span>
+  </div>
+  <div class="toggle-content">
+    <p>
+We start with a free 20-minute call to dive into your business, your vision, and where you’re feeling stuck. This is where I learn your goals and start mapping out the best direction for your brand.</p>
+  </div>
+</div>
+
 </section>
 <section id="discovery">
   <h2>You’re Not Meant to Do It All.</h2>
+  <br />
   <p>As entrepreneurs, we wear a lot of hats. But branding, design, photography, videography, AND creative strategy? That’s a lot to carry.
-
-​
-
+<br />
+​<br />
 You don’t have to figure it all out alone.
 
 You don’t have to keep guessing.
 
 You don’t have to keep postponing your launch because "it’s not ready."
+<br />
+​<br />
 
-​
-
-I’m here to help you finally elevate your brand — so you can focus on doing what you do best: running your business.</p>
+<b>I’m here to help you finally elevate your brand — so you can focus on doing what you do best: running your business.</b></p>
+<br />
 <a href="Boo">Book A Discovery Call</a>
+<!-- Slider main container -->
+</section>
+<section id="follow">
+  <h3>FOLLOW AND CONNECT WITH US
+<span>@TRULYELEVATEDAGENCY</span></h3>
 </section>
 <footer>
+  <h2>Join The Email List, Stay Elevated.</h2>
+  <p>Every month, you’ll get actionable tips to grow your brand — plus an inside look at client projects, creative process moments, and what we’re building behind the scenes at Truly Elevated. It’s strategy, storytelling, and inspo — straight to your inbox.</p>
+  <form action="" method="get" accept-charset="utf-8">
+    <label for="Email">Email*</label>
+    <input type="email" name="" id="" value="" />
+    <button type="submit">Submit</button>
+  </form>
+  <div class="quicklinks">
+    <a href="ff">FAQS</a>
+    <a href="#">Privacy Policy</a>
+      <div class="">
+    Enail: <a href="#" style="display: inline-block;">hello@wajucreative
+    com</a>
+  </div>
+  </div>
+<p style="padding: 30px 0px;">© 2025 by Waju Creative Agency Inc.</p>
 </footer>
 </div>
 </div>
 </body>
 <script src="main.js" type="text/javascript" charset="utf-8"></script>
+<script type="module" src="swiper.js"></script>
+<script>
+  function toggleText(header) {
+    const arrow = header.querySelector(".arrow");
+    const content = header.nextElementSibling;
+    content.style.display = content.style.display === "block" ? "none" : "block";
+    arrow.classList.toggle("rotate");
+  }
+</script>
 </html>
