@@ -21,8 +21,20 @@
       margin: 0;
       padding: 0;
       scroll-behavior: smooth;
-          border: 0px solid blue;
-font-family: figtree;
+      border: 0px solid blue;
+      font-family: figtree;
+    }
+    .whatsapp {
+      position: fixed;
+      botom: 100px;
+      left: 0;
+      bottom: 0;
+      height: 100px;
+      height: 100px;
+      z-index: 10;
+    }
+    .whatsapp img{
+      width: 100px;
     }
     html,body{
       width: 100%;
@@ -75,13 +87,15 @@ font-family: figtree;
       padding: 1rem 2rem;
       top: 0;
       z-index: 999;
+      flex-wrap: nowrap;
     }
     nav {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
       display: inline-flex;
-    } .menu-btn{
+    }
+    .menu-btn{
       display: none;
     }
 .closebtn{
@@ -127,11 +141,11 @@ font-family: figtree;
         right: 0;
         width: 70%;
         z-index: 100000000;
-        height: 1000px;
+        height: 100%;
         padding-left: 50px;
         padding-top: 20px;
         text-align: left;
-
+        position: fixed;
 
       }
       nav.mobile a { 

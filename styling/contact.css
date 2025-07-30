@@ -1,0 +1,125 @@
+.herobg{
+  background-image: url("/images/Artboard 9.png");
+  background-position: center;
+  background-size: cover;
+}
+.herobg .hero{
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, .6
+  );
+}
+.herobg .hero h2{
+  margin: 0;
+}
+.herobg .hero p{
+  padding: 0;
+  margin: 0;
+  font-weight: 450;
+}
+.herobg .hero p a{
+  text-decoration: none;
+  color: #fff;
+}
+
+section#form{
+  background: var(--moss-green);
+  padding: 30px;
+  height: 100vh;
+  position: relative;
+}
+section#form p{
+  text-align: center;
+  color: #fff;
+}
+section#form form{
+      padding: 25px;
+      text-align: left;
+      background: rgba(225, 255, 183, 1);
+      margin-top: 30px;
+      border: 1px solid var(--dark-grey);
+    }
+    section#form form label{
+      text-align: left;
+      font-weight: 350;
+      font-size: 20px;
+    }
+    section#form form input{
+      width: 100%;
+      padding: 10px 10px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      font-size: 20px;
+      background: var(--lightgrey);
+    }
+    section#form form button{
+      padding: 15px;
+      width: 100%;
+      background: var(--rust-brown);
+      color: #fff;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .select{
+      display: flex;
+      border: 0px solid red;
+      align-items: center;
+      gap: 5px;
+      padding: 8px 0px;
+    }
+    
+    label.checkbox{
+      border: 0px solid red;
+      text-wrap: nowrap
+    }
+    section#form .select input{
+      width: fit-content;
+      padding: 0;
+      margin: 0;
+      border: 0px solid red;
+    }
+    section#form textarea{
+      border: 1px solid var(--dark-grey);
+      margin: 10px 0px;
+      padding: 10px 10px;
+      font-size: 20px;
+      width: 100%;
+    }
+    #cta3{
+      margin-top: 500px;
+  background-image: url("/images/Artboard 9.png");
+  background-position: center;
+  background-size: cover;
+}
+#cta3 .overlay{
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, .6
+  );
+  text-align: center;
+}
+#cta3 .overlay h2{
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+}
+#cta3 .overlay p{
+  padding: 0;
+  margin: 0;
+  font-weight: 450;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+}
+#cta3 .overlay a{
+  text-decoration: none;
+  padding: 15px 30px;
+width: 100%;
+background: var(--rust-brown);
+color: #fff;
+font-size: 18px;
+font-weight: 400;
+display: inline-block;
+width: fit-content;
+justify-self: center;
+}
