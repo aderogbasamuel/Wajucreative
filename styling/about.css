@@ -227,7 +227,13 @@ section#ourvalues ul li:nth-child(even) p {
 }
 
         @media (min-width: 768px) {
-          #about-founder,#reason,#aboutme,#cta2{
+          section#about-founder .text{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            text-align: left;
+            margin-top: 10px;
+          }
+          section#about-founder,#reason,#aboutme,#cta2{
             padding: 4rem 8rem;
           }
           #about-founder h2,#reason h2,#aboutme h2,#cta2 h2{
