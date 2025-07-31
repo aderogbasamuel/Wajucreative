@@ -1,484 +1,712 @@
 @font-face {
   font-family: poppins;
   src: url(/fonts/Poppins-Medium.ttf);
-}   
+}
+
 @font-face {
-  font-family: figtree ;
+  font-family: figtree;
   src: url(/fonts/LeagueSpartan-VariableFont_wght.ttf);
 }
-    :root {
-  --dark-grey:  #242424;
+
+:root {
+  --dark-grey: #242424;
   --lightgrey: #f8f8f8;
   --moss-green: #457A00;
-  --rust-brown: #7a2f00 ;
+  --rust-brown: #7a2f00;
   
-
+  
 }
 
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      scroll-behavior: smooth;
-      border: 0px solid blue;
-      font-family: figtree;
-    }
-    .whatsapp {
-      position: fixed;
-      botom: 100px;
-      left: 0;
-      bottom: 0;
-      height: 100px;
-      height: 100px;
-      z-index: 10;
-    }
-    .whatsapp img{
-      width: 100px;
-    }
-    html,body{
-      width: 100%;
-      color: var(--dark-grey);
-    }
-    body {
-      font-family: inter, sans-serif;
-      color: var(--text-on-light);
-      background: var(--light); /* Warmer background */
-    }
-    .bg{
-      width: 100vw;
-      height: 100vh;
-      position: fixed;
-      background-image:url(images/94f55a_faf3aa3282134f2a96e71420436316d1~mv2.jpg);
-      background-size: cover;
-      background-position: center;
-      z-index: -10;
-      top: 0;
-      left: 0;
-    }
-    .body{
-      width: 100%;
-      clip-path: inset(0 0 0 0); /* Same effect as overflow: hidden but may work better with animations */
-    }
-    
-    .lightbg{
-      background: var(--light);
-    }
-    .headings{
-      color: var(--accent);
-      text-transform: uppercase;
-      font-family: poppins;
-      font-weight: 900;
-      font-size: 20px;
-      width: fit-content;
-      letter-spacing: 5px;
-      border-bottom: 3px solid var(--accent);
-      justify-self: center;
-      margin-bottom: 10px;
-      padding:0px  3px;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      background: var(--rust-brown);
-      color: white;
-      padding: 1rem 2rem;
-      top: 0;
-      z-index: 999;
-      flex-wrap: nowrap;
-    }
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      display: inline-flex;
-    }
-    .menu-btn{
-      display: none;
-    }
-.closebtn{
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  border: 0px solid blue;
+  font-family: figtree;
+}
+
+.whatsapp {
+  position: fixed;
+  botom: 100px;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  height: 100px;
+  z-index: 10;
+}
+
+.whatsapp img {
+  width: 100px;
+}
+
+html,
+body {
+  width: 100%;
+  color: var(--dark-grey);
+}
+
+body {
+  font-family: inter, sans-serif;
+  color: var(--text-on-light);
+  background: var(--light);
+  /* Warmer background */
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-image: url(images/94f55a_faf3aa3282134f2a96e71420436316d1~mv2.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -10;
+  top: 0;
+  left: 0;
+}
+
+.body {
+  width: 100%;
+  clip-path: inset(0 0 0 0);
+  /* Same effect as overflow: hidden but may work better with animations */
+}
+
+.lightbg {
+  background: var(--light);
+}
+
+.headings {
+  color: var(--accent);
+  text-transform: uppercase;
+  font-family: poppins;
+  font-weight: 900;
+  font-size: 20px;
+  width: fit-content;
+  letter-spacing: 5px;
+  border-bottom: 3px solid var(--accent);
+  justify-self: center;
+  margin-bottom: 10px;
+  padding: 0px 3px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: var(--rust-brown);
+  color: white;
+  padding: 1rem 2rem;
+  top: 0;
+  z-index: 999;
+  flex-wrap: nowrap;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  display: inline-flex;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.closebtn {
   font-size: 50px;
   color: #fff;
   font-weight: 100;
   text-align: right;
   display: none;
 }
-    nav a {
-      margin-left: 1rem;
-      color: white; 
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 18px;
-      text-transform: uppercase;
-      }
-      
-    nav a:hover {
-      color: var(--accent);
-      text-decoration: underline; 
-      
-    }
-    @media (max-width: 768px) {
-      header nav {
-        display: none;
-        }
-      header .menu-btn {
-        display: block; 
-        font-size: 1.5rem;
-        cursor: pointer; 
-        
-      }
-      nav.mobile .closebtn{
-        display: block;
-      }
-      nav.mobile {
-        display: flex;
-        flex-direction: column;
-        background: var(--moss-green); padding: 1rem; 
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 70%;
-        z-index: 100000000;
-        height: 100%;
-        padding-left: 50px;
-        padding-top: 20px;
-        text-align: left;
-        position: fixed;
 
-      }
-      nav.mobile a { 
-        margin: 0.5rem 0; 
-        
-      }
-    }
- .hero {
-   background: rgba(0, 0, 0, 0.3);
-      color: white;
-      text-align: center;
-      padding: 6rem 2rem;
-    }
+nav a {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+}
 
-    .hero h2 {
-      font-size: 2rem;
-      animation: fadeIn 2s ease-in-out;
-      font-weight: 500;
-    }
+nav a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+  
+}
 
-    .hero p {
-      margin-top: 1rem;
-      animation: fadeIn 3s ease-in-out;
-            line-height: 20px;
-
-    }
-    .hero button{
-      display: flex;
-      background: var(--moss-green);
-      border: none;
-      color: #fff;
-      padding: 15px 30px;
-      text-transform: uppercase;
-      align-items: center;
-      justify-self: center;
-      margin-top: 1rem;
-      font-size: 15px;
-      animation: fadeIn 4s ease-in-out;
-
-    }
-    #cta{
-      background: var(--moss-green);
-      padding: 50px 0px;
-      color: #fff;  
-      text-align: center;
-    }
-    #cta .text{
-      padding: 0px 25px;
-    }
-    #cta h2{
-      font-size: 2rem;
-      font-weight: 500;
-      margin-bottom: 10px;
-    }
-    #cta p{
-      line-height: 20px;
-      padding: 10px;
-      font-weight: 400;
-    }
-    #cta form{
-      padding: 20px 45px;
-      text-align: left;
-    }
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+  
+  header .menu-btn {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
     
-    #cta form input{
-      width: 100%;
-      padding: 20px 20px;
-      margin-top: 10px;
-      margin-bottom: 30px;
-    }
-    #cta form button{
-      padding: 20px;
-      width: 100%;
-      background: var(--rust-brown);
-      color: #fff;
-      font-size: 18px;
-    }
-    #cta .img{
-      background-image: url(/images/newipadagain.png);
-      height: 350px;
-      width: 100%;
-      background-size: cover;
-      transform: translateX(-0px);
-      background-position: center;
-    }
-    #about{
-      background: var(--lightgrey);
-      padding: 50px 45px;
-    }
-    #about .heading{
-      text-transform: uppercase;
-    }
-    #about h2{
-      margin-top: 10px;
-      font-weight: 350;
-      font-size: 2rem;
-    }
-    #about h2 span{
-      color: var(--moss-green);
-    }
-    #about .subtext{
-      font-weight: 500;
-      margin-top: 8px;
-    }
-    #about button{
-      background: var(--moss-green);
-      padding: 20px 40px;
-      color: #fff;
-      margin-top: 8px;
-      font-size: 15px;
-      font-weight: 400;
-    }
-    #about img{
-      border: 1px solid var(--dark-grey);
-      margin-top: 10px;
-    }
-    #whyus{
-      padding: 50px 0px;
-      text-align: center;
-      background: rgba(225, 255, 183, 1);
-            clip-path: inset(0 0 0 0); /* Same effect as overflow: hidden but may work better with animations */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    #whyus h2,#works h2{
-      margin-top: 10px;
-      font-weight: 400;
-      font-size: 2rem;
-      padding: 2px;
-    }
-    #whyus h2 span,#works h2 span{
-      color: var(--moss-green);
-      display: block;
-    }
-    #whyus .subtext{
-      font-weight: 500;
-      margin-top: 8px;
-      padding: 0px 40px;
-      font-size: 13px;
-      line-height: 13px;
-    }
-      @keyframes moveright {
+  }
+  
+  nav.mobile .closebtn {
+    display: block;
+  }
+  
+  nav.mobile {
+    display: flex;
+    flex-direction: column;
+    background: var(--moss-green);
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    z-index: 100000000;
+    height: 100%;
+    padding-left: 50px;
+    padding-top: 20px;
+    text-align: left;
+    position: fixed;
+    
+  }
+  
+  nav.mobile a {
+    margin: 0.5rem 0;
+    
+  }
+}
+
+.hero {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  animation: fadeIn 2s ease-in-out;
+  font-weight: 500;
+}
+
+.hero p {
+  margin-top: 1rem;
+  animation: fadeIn 3s ease-in-out;
+  line-height: 20px;
+  
+}
+
+.hero button {
+  display: flex;
+  background: var(--moss-green);
+  border: none;
+  color: #fff;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  align-items: center;
+  justify-self: center;
+  margin-top: 1rem;
+  font-size: 15px;
+  animation: fadeIn 4s ease-in-out;
+  
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 10rem 4rem;
+  }
+  
+  .hero h2 {
+    font-size: 3.5rem;
+  }
+  
+  .hero p {
+    padding: 0 4rem;
+    font-size: 20px;
+  }
+}
+
+#cta {
+  background: var(--moss-green);
+  padding: 50px 0px;
+  color: #fff;
+  text-align: center;
+}
+
+#cta .text {
+  padding: 0px 25px;
+}
+
+#cta h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#cta p {
+  line-height: 20px;
+  padding: 10px;
+  font-weight: 400;
+}
+
+#cta form {
+  padding: 20px 45px;
+  text-align: left;
+}
+
+#cta form input {
+  width: 100%;
+  padding: 20px 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#cta form button {
+  padding: 20px;
+  width: 100%;
+  background: var(--rust-brown);
+  color: #fff;
+  font-size: 18px;
+}
+
+#cta .img {
+  background-image: url(/images/newipadagain.png);
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  transform: translateX(-0px);
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  #cta form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 2rem 4rem;
+  }
+  
+  #cta label {
+    width: 100%;
+  }
+  
+  #cta h2 {
+    font-size: 2rem;
+  }
+  
+  #cta {
+    padding: 3rem 8rem;
+    padding-bottom: 0;
+    position: relative;
+  }
+  
+  #cta p {
+    padding: 1rem 4rem;
+  }
+  
+  #cta .img {
+    position: absolute;
+    top: 0;
+    left: -5rem;
+    height: 250px;
+    width: 250px;
+    transform: rotate(15deg);
+  }
+}
+
+#about {
+  background: var(--lightgrey);
+  padding: 50px 45px;
+}
+
+#about .heading {
+  text-transform: uppercase;
+}
+
+#about h2 {
+  margin-top: 10px;
+  font-weight: 350;
+  font-size: 2rem;
+}
+
+#about h2 span {
+  color: var(--moss-green);
+}
+
+#about .subtext {
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+#about button {
+  background: var(--moss-green);
+  padding: 20px 40px;
+  color: #fff;
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#about img {
+  border: 1px solid var(--dark-grey);
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  #about {
+    display: flex;
+    padding: 5rem;
+    gap: 2rem;
+  }
+  
+  #about .text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  
+  #about h2 {
+    font-size: 2.8rem;
+  }
+  
+  #about p {
+    font-size: 20px;
+  }
+  
+  #about img {
+    width: 50%;
+    
+  }
+}
+
+#whyus {
+  padding: 50px 0px;
+  text-align: center;
+  background: rgba(225, 255, 183, 1);
+  clip-path: inset(0 0 0 0);
+  /* Same effect as overflow: hidden but may work better with animations */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#whyus h2,
+#works h2 {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 2px;
+}
+
+#whyus h2 span,
+#works h2 span {
+  color: var(--moss-green);
+  display: block;
+}
+
+#whyus .subtext {
+  font-weight: 500;
+  margin-top: 8px;
+  padding: 0px 40px;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+@keyframes moveright {
   from {
     transform: translateX(-200px);
   }
+  
   to {
     transform: translateX(0px);
-
+    
   }
-     }
-       @keyframes moveleft {
+}
+
+@keyframes moveleft {
   from {
     transform: translateX(200px);
   }
+  
   to {
     transform: translateX(0px);
-
-  }
-     }
-     .list{
-             clip-path: inset(0 0 0 0); /* Same effect as overflow: hidden but may work better with animations */
-             
-             text-align: center;
-             border: 0px solid red;
-             width: 300px;
-            position: relative;
-            list-style: none;
-            margin-top: 10px;
-            
-     }
-    #whyus .list li{
-      padding: 10px 20px;
-      border-radius: 100px;
-      text-align: center;
-      width: 100%;
-      color: #fff;
-      margin-bottom: 10px;
-      font-size: 15px;
-      height: 60px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    #whyus .list li:nth-child(even){
-      animation: moveleft linear forwards;
-      border: var(--dark-grey) 1px solid;
-      animation-timeline: view();
-      color: #fff;
-      animation-range: entry 0 cover 40%;
-      font-weight: 400;
-      transition: 0.3s;
-      background: var(--moss-green);
-    }
-      #whyus .list li:nth-child(odd) {
     
-    animation: moveright linear forwards;
-    background: var(--rust-brown);
-    border: var(--dark-grey) 1px solid;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-    font-weight: 500;
-    transition: 0.3s;
   }
-    #works{
-      padding: 50px 0px;
-      background: var(--lightgrey);
-    }
-    #works h2{
-      text-align: center;
-      padding: 5px;
-      font-size: 35px;
-    }
-   
-    #works h2 span{
-      display: inline-block;
-    }
-    #works .card{
-      padding: 20px 40px;
-      text-align: left;
-      justify-content: left;
-    }
-     #works .card h2 {
-   text-align: left;
-   padding: 5px 0px;
- }
-    #works .card img{
-      width: 100%;
-    }
-    #works .card a{
-      color: #fff;
-padding: 10px;
-display: block;
-width: fit-content;
-padding: 20px 40px;
-color: #fff;
-margin-top: 8px;
-font-size: 15px;
-font-weight: 400;
-border: none;
-text-decoration: none;
-text-transform: uppercase;
-    }
-    #works .card:nth-child(even) a{
-      background: var(--rust-brown);
-
-    }
-    #works .card:nth-child(odd) a{
-      background: var(--moss-green);
-      
-    }
-        @media (min-width: 768px) {
-          #cta form{
-              
-          }
-          #works .card{
-            display: flex;
-            align-items: stretch;
-          }
-          #whyus{
-            padding: 50px 50px;
-
-          }
-          .list .row{
-            display: flex;
-            gap: 40px;
-          }
 }
-section#features{
+
+.list {
+  clip-path: inset(0 0 0 0);
+  /* Same effect as overflow: hidden but may work better with animations */
+  
+  text-align: center;
+  border: 0px solid red;
+  width: 300px;
+  position: relative;
+  list-style: none;
+  margin-top: 10px;
+  
+}
+
+#whyus .list li {
+  padding: 10px 20px;
+  border-radius: 100px;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 15px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#whyus .list li:nth-child(even) {
+  animation: moveleft linear forwards;
+  border: var(--dark-grey) 1px solid;
+  animation-timeline: view();
+  color: #fff;
+  animation-range: entry 0 cover 40%;
+  font-weight: 400;
+  transition: 0.3s;
+  background: var(--moss-green);
+}
+
+#whyus .list li:nth-child(odd) {
+  
+  animation: moveright linear forwards;
+  background: var(--rust-brown);
+  border: var(--dark-grey) 1px solid;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+@media (min-width: 768px) {
+  #whyus {
+    padding: 50px 50px;
+    clip-path: inset(0 0 0 0);
+    
+  }
+  
+  #whyus h2 {
+    font-size: 3.5rem;
+  }
+  
+  #whyus .subtext {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0 6rem;
+  }
+  
+  #whyus .list {
+    width: 100%;
+    border: 0px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #whyus .list .row {
+    display: flex;
+    gap: 40px;
+  }
+  
+  #whyus .list li {
+    height: 80px;
+    font-size: 25px;
+    line-height: 25px;
+    width: 50%;
+  }
+  
+  
+  
+}
+
+
+#works {
+  padding: 50px 0px;
+  background: var(--lightgrey);
+}
+
+#works h2 {
+  text-align: center;
+  padding: 5px;
+  font-size: 35px;
+}
+
+#works h2 span {
+  display: inline-block;
+}
+
+#works .card {
+  padding: 20px 40px;
+  text-align: left;
+  justify-content: left;
+}
+
+#works .card h2 {
+  text-align: left;
+  padding: 5px 0px;
+}
+
+#works .card img {
+  width: 100%;
+}
+
+#works .card a {
+  color: #fff;
+  padding: 10px;
+  display: block;
+  width: fit-content;
+  padding: 20px 40px;
+  color: #fff;
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 400;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#works .card:nth-child(even) a {
+  background: var(--rust-brown);
+  
+}
+
+#works .card:nth-child(odd) a {
+  background: var(--moss-green);
+  
+}
+
+@media (min-width: 768px) {
+  #works h2 {
+    font-size: 3.3rem;
+  }
+  
+  #works .cards {
+    padding: 5rem;
+  }
+  
+  #works .cards .card {
+    display: flex;
+    align-items: stretch;
+    gap: 3rem;
+  }
+  
+  #works .cards .card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  #works .cards .card .content {
+    width: 50%;
+    
+  }
+  
+  #works .cards .card img {
+    width: 50%;
+  }
+  
+  #works .cards .card p {
+    font-size: 1.2rem;
+    
+  }
+}
+
+section#features {
   background: var(--moss-green);
   color: #fff;
   padding: 30px 0px;
 }
-section#features h2{
+
+section#features h2 {
   font-weight: 600;
   padding: 20px;
   text-align: center;
   font-size: 20px;
 }
-section#portfolio,section#testimonials{
-  background:var(--lightgrey);
+
+section#portfolio,
+section#testimonials {
+  background: var(--lightgrey);
   text-align: center;
   padding: 50px 0px;
 }
-section#portfolio h2,section#testimonials h2,section#discovery h2,footer h2{
+
+section#portfolio h2,
+section#testimonials h2,
+section#discovery h2,
+footer h2 {
   padding: 0px 30px;
   font-size: 35px;
   font-weight: 500;
   margin-top: 5px;
 }
-section#portfolio a{
-  background: var(--moss-green);
-padding: 20px 40px;
-color: #fff;
-margin-top: 8px;
-font-size: 15px;
-font-weight: 400;
-text-decoration: none;
-display: block;
-width: fit-content;
-justify-self: center;
+
+@media (min-width: 768px) {
+  section#portfolio h2,
+  section#testimonials h2,
+  section#discovery h2,
+  footer h2 {
+    font-size: 3rem;
+  }
 }
-section#testimonials{
+
+section#portfolio a {
+  background: var(--moss-green);
+  padding: 20px 40px;
+  color: #fff;
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  justify-self: center;
+}
+
+section#testimonials {
   background: var(--moss-green);
   color: #fff;
 }
-section#testimonials .text{
+
+section#testimonials .text {
   text-align: left;
   padding: 25px;
 }
-section#testimonials .text .heading{
+
+section#testimonials .text .heading {
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 500;
-margin-top: 25px;
+  margin-top: 25px;
 }
-section#testimonials .text .client_testimonial{
+
+section#testimonials .text .client_testimonial {
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
 }
-section#testimonials .text .client_name{
+
+section#testimonials .text .client_name {
   font-size: 18px;
   margin-top: 30px;
 }
-section#testimonials .slider_btn{
+
+section#testimonials .slider_btn {
   display: flex;
   justify-content: end;
   gap: 10px;
   padding: 10px;
   
 }
-section#testimonials .slider_btn button{
+
+section#testimonials .slider_btn button {
   background: rgba(225, 255, 183, 1);
   color: var(--dark-grey);
   padding: 10px 40px;
@@ -487,155 +715,196 @@ section#testimonials .slider_btn button{
   font-weight: 600;
   transition: 0.2s;
 }
-section#testimonials .slider_btn button:hover{
+
+section#testimonials .slider_btn button:hover {
   border: 1.2px solid black;
 }
 
-#how-we-work{
-      padding: 50px 0px;
-      background: var(--lightgrey);
-    }
-    #how-we-work h2{
-      text-align: center;
-      padding: 5px;
-      font-size: 35px;
-      margin-top: 10px;
-font-weight: 400;
-font-size: 2rem;
-    }
-   
-    #how-we-work h2 span{
-      display: inline-block;
-            color: var(--moss-green);
-
-    }
-    #discovery,footer{
-      padding: 50px 30px;
-      padding-bottom: 0;
-      background: var(--moss-green);
-      text-align: center;
-      color: #fff;
-      font-size: 20px;
-    }
-    footer{
-      padding: 50px 20px;
-    }
-    footer p{
-      font-size: 15px;
-      margin-top: 20px;
-      line-height: 15px;
-      padding: 0px 20px;
-    }
-    footer form{
-      padding: 25px;
-      text-align: left;
-    }
-    footer form label{
-      text-align: left;
-      font-weight: 350;
-      font-size: 20px;
-    }
-    footer form input{
-      width: 100%;
-      padding: 20px 20px;
-      margin-top: 10px;
-      margin-bottom: 30px;
-      background: var(--lightgrey);
-    }
-    footer form button{
-      padding: 15px;
-      width: 100%;
-      background: var(--rust-brown);
-      color: #fff;
-      font-size: 20px;
-      font-weight: 500;
-    }
-    #discovery a{
-      background: rgba(225, 255, 183, 1);
-
-padding: 20px 40px;
-color: var(--moss-green);
-margin-top: 8px;
-font-size: 15px;
-font-weight: 500;
-text-decoration: none;
-display: block;
-width: fit-content;
-justify-self: center;
-text-transform: uppercase;
-    }
-    
-    
-  .swiper {
-    width: 100%;
-    margin-top: 30px;
+#how-we-work {
+  padding: 50px 0px;
+  background: var(--lightgrey);
 }
-.swiper-slide{
+
+#how-we-work h2 {
+  text-align: center;
+  padding: 5px;
+  font-size: 35px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+#how-we-work h2 span {
+  display: inline-block;
+  color: var(--moss-green);
+  
+}
+
+#discovery,
+footer {
+  padding: 50px 30px;
+  padding-bottom: 0;
+  background: var(--moss-green);
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+footer {
+  padding: 50px 20px;
+}
+
+footer p {
+  font-size: 15px;
+  margin-top: 20px;
+  line-height: 15px;
+  padding: 0px 20px;
+}
+
+footer form {
+  padding: 25px;
+  text-align: left;
+}
+
+footer form label {
+  text-align: left;
+  font-weight: 350;
+  font-size: 20px;
+}
+
+footer form input {
+  width: 100%;
+  padding: 20px 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background: var(--lightgrey);
+}
+
+footer form button {
+  padding: 15px;
+  width: 100%;
+  background: var(--rust-brown);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+        @media (min-width: 768px) {
+          footer{
+            padding:  4rem 8rem;
+          }
+          footer p{
+            padding: 0 4rem;
+            font-size: 20px;
+            line-height: 20px;
+          }
+          footer form{
+            width: 350px;
+            justify-self: center;
+          }
+        }
+          
+
+#discovery a {
+  background: rgba(225, 255, 183, 1);
+  
+  padding: 20px 40px;
+  color: var(--moss-green);
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  justify-self: center;
+  text-transform: uppercase;
+}
+
+
+.swiper {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.swiper-slide {
   width: 50%;
   height: 100px;
   background: #767676;
 }
 
 .toggle-container {
-      max-width: 400px;
-      margin: 0px 10px;
-      font-family: sans-serif;
-      border-top: 1px solid black;
-      
-    }
+  max-width: 400px;
+  margin: 0px 10px;
+  font-family: sans-serif;
+  border-top: 1px solid black;
+  
+}
 
-    .toggle-header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 15px 15px;
-      cursor: pointer;
-      transition: background 0.3s;
-      text-align: center;
-      font-size: 23px;
-      font-weight: 500;
-    }
+.toggle-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 500;
+}
 
-    .toggle-header:hover {
-    }
+.toggle-header:hover {}
 
-    .arrow {
-      transition: transform 0.3s;
-      position: absolute;
-      right: 20px;
-    }
+.arrow {
+  transition: transform 0.3s;
+  position: absolute;
+  right: 20px;
+}
 
-    .arrow.rotate {
-      transform: rotate(180deg);
-    }
+.arrow.rotate {
+  transform: rotate(180deg);
+}
 
-    .toggle-content {
-      display: none;
-      padding: 10px 15px;
-      border-top: none;
-      text-align: center;
-      font-size: 18px;
-      font-weight: 500;
-    }
-    #follow{
-      background: var(--lightgrey);
-      color: var(--dark-grey);
-      text-align: center;
-      padding: 60px 20px;
-    }
-    #follow h3{
-      font-weight: 500;
-      font-size: 25px;
-    }
-    #follow h3 span{
-      color: var(--moss-green);
-      display: block;
-    }
-    .quicklinks a{
-      font-size: 20px;
-      font-weight: 400;
-      color: #fff;
-      text-decoration: none;
-      display: block;
-      margin-bottom: 10px;
-    }
+.toggle-content {
+  display: none;
+  padding: 10px 15px;
+  border-top: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#follow {
+  background: var(--lightgrey);
+  color: var(--dark-grey);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#follow h3 {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+#follow h3 span {
+  color: var(--moss-green);
+  display: block;
+}
+
+.quicklinks a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 200px;
+    background: #000FB7;
+  }
+  
+  section h2 {
+    font-size: 500px;
+  }
+}

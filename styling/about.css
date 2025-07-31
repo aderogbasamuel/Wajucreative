@@ -1,129 +1,150 @@
-.founder{
+.founder {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
   margin: 40px 0px;
 }
-.founder h1{
+
+.founder h1 {
   font-size: 80px;
   position: relative;
   z-index: 10;
 }
 
-.founder img{
+.founder img {
   width: 300px;
   margin-top: -40px;
 }
-section#about-founder{
-      background: var(--moss-green);
-      padding: 50px 0px;
-      color: #fff;  
-      text-align: center;
-    }
-    section#about-founder h2{
-      font-size: 2rem;
-      font-weight: 500;
-      margin-bottom: 10px;
-      padding: 0px 50px;
-    }
-     section#about-founder p{
-      line-height: 20px;
-      padding: 15px;
-      font-weight: 300;
-      font-size: 18px;
-    }
-    section#about-founder h3{
-      padding: 10px 20px;
-      text-align: center;
-      font-size: 22px;
-      font-weight: 500;
-      line-height: 20px;
-    }
-    
-    section#about-founder .img{
-      padding: 0px 0px;
-      width: 300px;
-      justify-self: center;
-    }
 
-    section#about-founder img{
-      width: 100%;
-      background-size: cover;
-      transform: translateX(-0px);
-      background-position: center;
-    }
-    #reason{
-      padding: 50px 0px;
-      padding-bottom: 0;
-      text-align: center;
-      color: var(--dark-grey);
-      font-size: 20px;
-    }
-    #reason h2{
+section#about-founder {
+  background: var(--moss-green);
+  padding: 50px 0px;
+  color: #fff;
+  text-align: center;
+}
+
+section#about-founder h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding: 0px 50px;
+}
+
+section#about-founder p {
+  line-height: 20px;
+  padding: 15px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+section#about-founder h3 {
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+section#about-founder .img {
+  padding: 0px 0px;
+  width: 300px;
+  justify-self: center;
+}
+
+section#about-founder img {
+  width: 100%;
+  background-size: cover;
+  transform: translateX(-0px);
+  background-position: center;
+}
+
+#reason {
+  padding: 50px 0px;
+  padding-bottom: 0;
+  text-align: center;
+  color: var(--dark-grey);
+  font-size: 20px;
+}
+
+#reason h2 {
   padding: 0px 10px;
   font-size: 30px;
   font-weight: 500;
   margin: 10px 0px;
+  
+  
+}
 
-      
-    }
-    #reason h2 span{
-      color: var(--moss-green);
-      display: inline-block;
-    }
-    #reason p{
-      padding: 30px;
-      font-size: 18px;
-      line-height: 22px;
-      font-weight: 500;
-    }
-    section#aboutme{
-      background: rgba(225, 255, 183, 1);
-      padding: 50px 20px;
-      margin-top: 30px;
-      text-align: center;
-    }
-    section#aboutme h2{
-      font-weight: 400;
-      font-size: 30px;
-    }
-section#aboutme p{
+#reason h2 span {
+  color: var(--moss-green);
+  display: inline-block;
+}
+
+#reason p {
+  padding: 30px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+section#aboutme {
+  background: rgba(225, 255, 183, 1);
+  padding: 50px 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+section#aboutme h2 {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+section#aboutme p {
   font-weight: 550;
   font-size: 21px;
   line-height: 25px;
   margin-top: 20px;
   padding: 0px 10px;
 }
-section#aboutme p i{
+
+section#aboutme p i {
   color: var(--moss-green);
   font-weight: 400;
 }
-section#ourvalues{
+        @media (min-width: 768px) {
+          section#aboutme{
+          padding: 4rem 10rem;
+          }
+        }
+
+section#ourvalues {
   background: var(--moss-green);
   padding: 50px 0px;
   text-align: center;
   color: #fff;
 }
-section#ourvalues h2{
+
+section#ourvalues h2 {
   font-weight: 400;
   padding: 5px 20px;
-
+  
 }
 
-section#ourvalues ul{
+section#ourvalues ul {
   padding: 0 0;
 }
-section#ourvalues ul li{
+
+section#ourvalues ul li {
   display: flex;
   align-items: center;
   overflow: hidden;
   list-style: none;
   margin-top: 10px;
-
+  
 }
 
-section#ourvalues ul li p{
+section#ourvalues ul li p {
   white-space: nowrap;
   font-size: 40px;
   font-weight: 500;
@@ -135,55 +156,87 @@ section#ourvalues ul li p{
   transform: translate(0);
   animation: text-scroll 10s linear infinite;
 }
-section#ourvalues ul li:nth-child(even) p{
+
+section#ourvalues ul li:nth-child(even) p {
   animation: text-scroll-2 10s linear infinite;
+  
+}
+        @media (min-width: 768px) {
+          section#ourvalues h2{
+            font-size: 3rem;
+          }
+          section#ourvalues ul li p{
+            font-size: 6rem;
+          }
+        }
 
+@keyframes text-scroll {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  
+  100% {
+    transform: translate3d(0%, 0, 0);
+  }
 }
 
-@keyframes text-scroll{
-  0%{
-    transform: translate3d(-100%,0,0);
+@keyframes text-scroll-2 {
+  0% {
+    transform: translate3d(0%, 0, 0);
   }
-  100%{
-    transform: translate3d(0%,0,0);
-  }
-}
-@keyframes text-scroll-2{
-  0%{
-    transform: translate3d(0%,0,0);
-  }
-  100%{
-    transform: translate3d(-100%,0,0);
+  
+  100% {
+    transform: translate3d(-100%, 0, 0);
   }
 }
-#cta2{
+
+#cta2 {
   padding: 50px 0px;
-margin-top: 30px;
-text-align: center;
+  margin-top: 30px;
+  text-align: center;
 }
-#cta2 h2{
+
+#cta2 h2 {
   font-weight: 400;
   padding: 5px;
   font-size: 28px;
 }
-#cta2 h2 span{
+
+#cta2 h2 span {
   color: var(--moss-green);
 }
-#cta2 p{
+
+#cta2 p {
   padding: 10px 20px;
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
 }
-#cta2 a{
-      padding: 15px;
-      width: 100%;
-      background: var(--rust-brown);
-      color: #fff;
-      font-size: 15px;
-      display: inline-block;
-      width: fit-content;
-      text-decoration: none;
-      margin-top: 10px;
-      text-transform: uppercase;
-    }
+
+#cta2 a {
+  padding: 15px;
+  width: 100%;
+  background: var(--rust-brown);
+  color: #fff;
+  font-size: 15px;
+  display: inline-block;
+  width: fit-content;
+  text-decoration: none;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+        @media (min-width: 768px) {
+          #about-founder,#reason,#aboutme,#cta2{
+            padding: 4rem 8rem;
+          }
+          #about-founder h2,#reason h2,#aboutme h2,#cta2 h2{
+            font-size: 3rem;
+          }
+          #about-founder p,#reason p,#aboutme p,#cta2 p{
+            font-size: 20px;
+            line-height: 20px;
+          }
+
+
+        }

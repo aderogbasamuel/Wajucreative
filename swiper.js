@@ -1,16 +1,16 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  slidesPerView:'auto',
-  spaceBetween:30,
-
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  
   // Navigation arrows
-  autoplay:{
+  autoplay: {
     delay: 2500,
   },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
+  
   
 });

@@ -1,317 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Welcome to waju creative" />
+  <meta name="description" content="Welcome to waju creative" />
   <title>Waju Creative</title>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="features.css" />
+  
 </head>
 
 <body>
   <a href="wa.me/+2348139509235" class="whatsapp"><img src="images/whatsapp.png" alt="whatsapp logo" /></a>
-    <div class="bg"></div>
-<div class="body">
-  <div class="lightbg">
+  <div class="bg"></div>
+  <div class="body">
+    <div class="lightbg">
+      <header>
+        <img src="images/logo.png" alt="logo" height="50px" />
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        <nav id="desktop-nav">
+          <span onclick="closeNav()" class="closebtn">x</span>
+          
+          <a href="#about">Home</a>
+          <a href="about.html">About</a>
+          <a href="#works">Our Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+      <nav id="mobile-nav" class="mobile" style="display: none;">
+      </nav>
+      <div class="hero">
+        <h2 id="">Elevating brands with a blend of creativity, strategy, and passion.
+        </h2>
+        <p>You’ve built the dream — now let’s package it to match. Iconic branding, powerful visuals, and content that makes your audience say: 'I need that.' This is your elevation season.</p>
+        <button>View Services</button>
+        
+      </div>
+      <section id="cta">
+        <div class="text">
+          <h2>Free Guide: So You Want to Start the Business?</h2>
+          <p>Before you launch, let’s make sure your foundation is actually in place. Grab this free guide to reflect on your values, purpose, and the kind of brand you’re truly building. Drop your email below to get the freebie straight to your inbox!</p>
+        </div>
+        
+        <form action="">
+          <label for="name">Full Name *
+          <input type="text" name="name" id="name" value="" />
+          </label>
+          <label for="email">Email*
+          
+          <input type="text" name="name" id="name" value="" />
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+        <div class="img">
+        </div>
+        
+      </section>
+      <section id="about">
+        <div class="text">
+          
+          <p class="heading">You bring the vision.</p>
+          <h2><span> I bring </span>the strategy, creative direction, and execution to make it real.</h2>
+          <p class="subtext">Together, we create something that feels like you — and positions your business to stand out and thrive.</p>
+          <button type="submit">ABOUT THE FOUNDER</button>
+        </div>
+        
+        <img src="/images/AmandaShearPhoto-Cre8tively-013.jpg" alt="" width="100%" />
+      </section>
+      <section id="whyus">
+        <h2><span>You’ve got the vision.</span>
+          The passion. The business.</h2>
+        <p class="subtext">But every time you sit down to actually build the brand — the website, the content, the visual identity — it feels overwhelming. You ask yourself:</p>
+        <div class="list">
+          <div class="row">
+            
+            <li>Where do I even start?</li>
+            <li>How do I even create content that connects and converts?</li>
+          </div>
+          <div class="row">
+            
+            <li>How do I make my brand look as good as my vision feels?</li>
+            <li>
+              How do I create consistency when I feel
+              like my brand is all over the place?</li>
+          </div>
+          <div class="row">
+            
+            <li>How do you turn my ideas into a clear and cohesive visual story?</li>
+            <li>What colors or fonts represent my business?</li>
+          </div>
+          
+          <p style="font-size: 20px;margin-top: 20px;">That's where Waju creative comes in.</p>
+        </div>
+      </section>
+      <section id="works">
+        <h2>You Don’t Have to Do It Alone — Here’s How We Can Work <span>Together</span></h2>
+        <div class="cards">
+          
+          <div class="card">
+            <img src="/images/Artboard 4.png" alt="" />
+            <div class="content">
+              
+              <h2>Brand Design</h2>
+              <p>Imagine having a brand that feels undeniably you — one that makes people stop, connect, and say, “I need this.” No more second-guessing your colors or piecing together a look that doesn’t quite fit. With a thoughtful, strategy-first approach, we’ll craft a visual identity that speaks clearly and confidently — so you can show up with purpose and pride, every time.</p>
+              <a type="submit">Unlock The Details</a>
+            </div>
+            
+          </div>
+          <div class="card">
+            <img src="/images/Artboard 9.png" alt="" />
+            <div class="content">
+              
+            <h2>Website Design</h2>
+            <p>What if your website actually did the talking for you? One that tells your story, sells your offer, and makes people want to stick around. No more hiding behind a half-finished site or sending folks to your Instagram instead. Together, we’ll design a digital home that looks amazing, works smart, and grows with you — so your brand shines 24/7.</p>
+            <a type="submit">Explore This Service</a>
+          </div>
+          </div>
 
-<header>
-  <img src="images/logo.png" alt="logo" height="50px"/>
-  <div class="menu-btn" onclick="toggleMenu()">☰</div>
-<nav id="desktop-nav">
-  <span onclick="closeNav()" class="closebtn">x</span>
+          <div class="card">
+            <img src="/images/Artboard 4.png" alt="" />
+            <div class="content">
+              
+            <h2>Photography & Videography</h2>
+            <p>Imagine scrolling through your own content and thinking, wow, this looks like a real brand. No more stressing about last-minute photos or trying to capture the vibe on your phone. I’ll help you build a custom library of photo and video content that’s authentic, on-brand, and ready to go — so you can create consistently and confidently.</p>
+            <a type="submit">Let's get into it</a>
+          </div>
+          </div>
 
-  <a href="#about">Home</a>
-  <a href="about.html">About</a>
-  <a href="#works">Web Design</a>
-  <a href="contact.html">Contact</a>
-</nav>
-</header>
-  <nav id="mobile-nav" class="mobile" style="display: none;">
-  </nav>
-<div class="hero">
-  <h2 id="">Elevating brands with a blend of creativity, strategy, and passion. 
-  </h2>
-<p>You’ve built the dream — now let’s package it to match. Iconic branding, powerful visuals, and content that makes your audience say: 'I need that.' This is your elevation season.</p>
-<button>View Services</button>
+          <div class="card">
+            <img src="/images/Artboard 4.png" alt="" />
+            <div class="content">
+              
+            <h2>Content Day</h2>
+            <p>
+              Picture this: a full gallery of content that looks and feels like your brand — not rushed, not recycled, and definitely not random. No more stressing about what to post or reusing that one photo you kinda like. Content Day is your chance to show up with visuals that align with your message, match your energy, and actually connect with your audience. We’ll plan with intention, shoot with purpose, and leave you with scroll-worthy assets you’ll be proud to share.</p>
+            <a type="submit">Tap In</a>
+          </div>
+        </div>
+        </div>
 
-</div>
-<section id="cta">
-  <div class="text">
-    
-  <h2>Free Guide: So You Want to Start the Business?</h2>
-  <p>Before you launch, let’s make sure your foundation is actually in place. Grab this free guide to reflect on your values, purpose, and the kind of brand you’re truly building. Drop your email below to get the freebie straight to your inbox!</p>
+      </section>
+      <section id="features">
+        <h2>OUR WORK AND AMAZING CLIENTS HAVE BEEN FEATURED ON</h2>
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio">
+        <p>EXPLORE OUR CREATIVE PORTFOLIO</p>
+        <h2>Take a look at some of the brands I’ve had the honor to help elevate.</h2>
+        <a href="#">Explore Portfolio</a>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          
+          <!-- If we need scrollbar -->
+        </div>
+        
+      </section>
+      <section id="testimonials">
+        <p>Testimonials</p>
+        <h2>Clients Words & Wins</h2>
+        <div class="text">
+          <div class="heading">
+            "Thank you a million times more."
+          </div>
+          <div class="client_testimonial">
+            "I am so grateful for your talent, great communication, patience and positive attitude. You are such an amazing person and was an absolute pleasure to work with on this important next step in my business. Months later and we can say we did it plus more! I look forward to doing more in the future with your business! Thanks will never be enough, this is not an end to a project but the beginning to many more great things. Thank you a million times more, Jonae."
+          </div>
+          <div class="client_name">
+            Brianna, Brielliant Ocassions
+          </div>
+          
+        </div>
+        <div class="slider_btn">
+          <button><
+            </button>
+              <button>></button>
+        </div>
+      </section>
+      <section id="how-we-work">
+        <h2>A Quick Look at
+          <span>How We Work Together</span>
+        </h2>
+        
+        <div class="toggle-container">
+          <div class="toggle-header" onclick="toggleText(this)">
+            <span>Discovery Call — Let’s Talk.</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="toggle-content">
+            <p>
+              We start with a free 20-minute call to dive into your business, your vision, and where you’re feeling stuck. This is where I learn your goals and start mapping out the best direction for your brand.</p>
+          </div>
+        </div>
+        <div class="toggle-container">
+          <div class="toggle-header" onclick="toggleText(this)">
+            <span>Proposal — Your Custom Plan.</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="toggle-content">
+            <p>
+              We start with a free 20-minute call to dive into your business, your vision, and where you’re feeling stuck. This is where I learn your goals and start mapping out the best direction for your brand.</p>
+          </div>
+        </div>
+        
+        <div class="toggle-container">
+          <div class="toggle-header" onclick="toggleText(this)">
+            <span>Agreement & Invoice — We Make It Official.</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="toggle-content">
+            <p>
+              We start with a free 20-minute call to dive into your business, your vision, and where you’re feeling stuck. This is where I learn your goals and start mapping out the best direction for your brand.</p>
+          </div>
+        </div>
+        
+      </section>
+      <section id="discovery">
+        <h2>You’re Not Meant to Do It All.</h2>
+        <br />
+        <p>As entrepreneurs, we wear a lot of hats. But branding, design, photography, videography, AND creative strategy? That’s a lot to carry.
+          <br />
+          ​<br />
+          You don’t have to figure it all out alone.
+          
+          You don’t have to keep guessing.
+          
+          You don’t have to keep postponing your launch because "it’s not ready."
+          <br />
+          ​<br />
+          
+          <b>I’m here to help you finally elevate your brand — so you can focus on doing what you do best: running your business.</b>
+        </p>
+        <br />
+        <a href="Boo">Book A Discovery Call</a>
+        <!-- Slider main container -->
+      </section>
+      <section id="follow">
+        <h3>FOLLOW AND CONNECT WITH US
+          <span>@WAJUCREATIVEAGENCY</span>
+        </h3>
+      </section>
+      <footer>
+        <h2>Join The Email List, Stay Elevated.</h2>
+        <p>Every month, you’ll get actionable tips to grow your brand — plus an inside look at client projects, creative process moments, and what we’re building behind the scenes at Truly Elevated. It’s strategy, storytelling, and inspo — straight to your inbox.</p>
+        <form action="" method="get" accept-charset="utf-8">
+          <label for="Email">Email*</label>
+          <input type="email" name="" id="" value="" />
+          <button type="submit">Submit</button>
+        </form>
+        <div class="quicklinks">
+          <a href="ff">FAQS</a>
+          <a href="#">Privacy Policy</a>
+          <div class="">
+            Enail: <a href="#" style="display: inline-block;">hello@wajucreative
+              com</a>
+          </div>
+        </div>
+        <p style="padding: 30px 0px;">© 2025 by Waju Creative Agency Inc.</p>
+      </footer>
     </div>
-
-  <form action="">
-  <label for="name">Full Name *</label>
-  <input type="text" name="name" id="name" value="" />
-  <label for="email">Email *</label>
-  <input type="text" name="name" id="name" value="" />
-  <button type="submit">Submit</button>
-  </form>
-  <div class="img">
   </div>
-
-</section>
-<section id="about">
-  <p class="heading">You bring the vision.</p>
-  <h2><span> I bring </span>the strategy, creative direction, and execution to make it real.</h2>
-  <p class="subtext">Together, we create something that feels like you — and positions your business to stand out and thrive.</p>
-  <button type="submit">ABOUT THE FOUNDER</button>
-  <img src="/images/AmandaShearPhoto-Cre8tively-013.jpg" alt="" width="100%"/>
-</section>
-<section id="whyus">
-  <h2><span>You’ve got the vision.</span>
-The passion. The business.</h2>
-<p class="subtext">But every time you sit down to actually build the brand — the website, the content, the visual identity — it feels overwhelming. You ask yourself:</p>
-<div class="list">
-  <div class="row">
-    
-  <li>Where do I even start?</li>
-  <li>How do I even create content that connects and converts?</li>
-  </div>
-  <div class="row">
-
-  <li>How do I make my brand look as good as my vision feels?</li>
-  <li>
-How do I create consistency when I feel
-like my brand is all over the place?</li>
-  </div>
-  <div class="row">
-
-<li>How do you turn my ideas into a clear and cohesive visual story?</li>
-<li>What colors or fonts represent my business?</li>
-  </div>
-
-<p style="font-size: 20px;margin-top: 20px;">That's where Waju creative comes in.</p>
-</div>
-</section>
-<section id="works">
-  <h2>You Don’t Have to Do It Alone — Here’s How We Can Work <span>Together</span></h2>
-  <div class="cards">
-    
-  <div class="card">
-    <img src="/images/Artboard 4.png" alt="" />
-    <div>
-      
-  <h2>Brand Design</h2>
-  <p>Imagine having a brand that feels undeniably you — one that makes people stop, connect, and say, “I need this.” No more second-guessing your colors or piecing together a look that doesn’t quite fit. With a thoughtful, strategy-first approach, we’ll craft a visual identity that speaks clearly and confidently — so you can show up with purpose and pride, every time.</p>
-  <a type="submit">Unlock The Details</a>
-  </div>
-
-  </div>
-    <div class="card">
-    <img src="/images/Artboard 9.png" alt="" />
-  <h2>Website Design</h2>
-  <p>What if your website actually did the talking for you? One that tells your story, sells your offer, and makes people want to stick around. No more hiding behind a half-finished site or sending folks to your Instagram instead. Together, we’ll design a digital home that looks amazing, works smart, and grows with you — so your brand shines 24/7.</p>
-  <a type="submit">Explore This Service</a>
-  </div>
-
-  <div class="card">
-    <img src="/images/Artboard 4.png" alt="" />
-  <h2>Photography & Videography</h2>
-  <p>Imagine scrolling through your own content and thinking, wow, this looks like a real brand. No more stressing about last-minute photos or trying to capture the vibe on your phone. I’ll help you build a custom library of photo and video content that’s authentic, on-brand, and ready to go — so you can create consistently and confidently.</p>
-  <a type="submit">Let's get into it</a>
-  </div>
-  <div class="card">
-    <img src="/images/Artboard 4.png" alt="" />
-  <h2>Content Day</h2>
-  <p>
-  Picture this: a full gallery of content that looks and feels like your brand — not rushed, not recycled, and definitely not random. No more stressing about what to post or reusing that one photo you kinda like. Content Day is your chance to show up with visuals that align with your message, match your energy, and actually connect with your audience. We’ll plan with intention, shoot with purpose, and leave you with scroll-worthy assets you’ll be proud to share.</p>
-  <a type="submit">Tap In</a>
-  </div>
-  </div>
-
-</section>
-<section id="features">
-  <h2>OUR WORK AND AMAZING CLIENTS HAVE BEEN FEATURED ON</h2>
-  <div class="slider">
-  <div class="slide-track">
-    <div class="slide">
-      <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="">
-    </div>
-    <div class="slide">
-      <img src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png" alt="">
-    </div>
-    <div class="slide">
-      <img src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png" alt="">
-    </div>
-    <div class="slide">
-      <img src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png" alt="">
-    </div>
-    <div class="slide">
-      <img src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png" alt="">
-    </div>
-    <div class="slide">
-      <img src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png" alt="">
-    </div>
-    <div class="slide">
-      <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="">
-    </div>
-    <div class="slide">
-      <img src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png" alt="">
-    </div>
-    <div class="slide">
-      <img src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png" alt="">
-    </div>
-    <div class="slide">
-      <img src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png" alt="">
-    </div>
-    <div class="slide">
-      <img src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png" alt="">
-    </div>
-    <div class="slide">
-      <img src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png" alt="">
-    </div>
-    <div class="slide">
-      <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="">
-    </div>
-    <div class="slide">
-      <img src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png" alt="">
-    </div>
-    <div class="slide">
-      <img src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png" alt="">
-    </div>
-    <div class="slide">
-      <img src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png" alt="">
-    </div>
-    <div class="slide">
-      <img src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png" alt="">
-    </div>
-    <div class="slide">
-      <img src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png" alt="">
-    </div>
-  </div>
-</div>
-</section>
-<section id="portfolio">
-  <p>EXPLORE OUR CREATIVE PORTFOLIO</p>
-  <h2>Take a look at some of the brands I’ve had the honor to help elevate.</h2>
-  <a href="#">Explore Portfolio</a>
-  <div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide"></div>
-    <div class="swiper-slide"></div>
-    <div class="swiper-slide"></div>
-    ...
-  </div>
-  <!-- If we need pagination -->
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-</div>
-
-</section>
-<section id="testimonials">
-  <p>Testimonials</p>
-  <h2>Clients Words & Wins</h2>
-  <div class="text">
-    <div class="heading">
-      "Thank you a million times more."
-    </div>
-    <div class="client_testimonial">
-"I am so grateful for your talent, great communication, patience and positive attitude. You are such an amazing person and was an absolute pleasure to work with on this important next step in my business. Months later and we can say we did it plus more! I look forward to doing more in the future with your business! Thanks will never be enough, this is not an end to a project but the beginning to many more great things. Thank you a million times more, Jonae."
-    </div>
-    <div class="client_name">
-      Brianna, Brielliant Ocassions
-    </div>
-    
-  </div>
-  <div class="slider_btn">
-    <button><</button>
-    <button>></button>
-  </div>
-</section>
-<section id="how-we-work">
-  <h2>A Quick Look at
-<span>How We Work Together</span></h2>
-
-<div class="toggle-container">
-  <div class="toggle-header" onclick="toggleText(this)">
-    <span>Discovery Call — Let’s Talk.</span>
-    <span class="arrow">▼</span>
-  </div>
-  <div class="toggle-content">
-    <p>
-We start with a free 20-minute call to dive into your business, your vision, and where you’re feeling stuck. This is where I learn your goals and start mapping out the best direction for your brand.</p>
-  </div>
-</div>
-<div class="toggle-container">
-  <div class="toggle-header" onclick="toggleText(this)">
-    <span>Proposal — Your Custom Plan.</span>
-    <span class="arrow">▼</span>
-  </div>
-  <div class="toggle-content">
-    <p>
-We start with a free 20-minute call to dive into your business, your vision, and where you’re feeling stuck. This is where I learn your goals and start mapping out the best direction for your brand.</p>
-  </div>
-</div>
-
-<div class="toggle-container">
-  <div class="toggle-header" onclick="toggleText(this)">
-    <span>Agreement & Invoice — We Make It Official.</span>
-    <span class="arrow">▼</span>
-  </div>
-  <div class="toggle-content">
-    <p>
-We start with a free 20-minute call to dive into your business, your vision, and where you’re feeling stuck. This is where I learn your goals and start mapping out the best direction for your brand.</p>
-  </div>
-</div>
-
-</section>
-<section id="discovery">
-  <h2>You’re Not Meant to Do It All.</h2>
-  <br />
-  <p>As entrepreneurs, we wear a lot of hats. But branding, design, photography, videography, AND creative strategy? That’s a lot to carry.
-<br />
-​<br />
-You don’t have to figure it all out alone.
-
-You don’t have to keep guessing.
-
-You don’t have to keep postponing your launch because "it’s not ready."
-<br />
-​<br />
-
-<b>I’m here to help you finally elevate your brand — so you can focus on doing what you do best: running your business.</b></p>
-<br />
-<a href="Boo">Book A Discovery Call</a>
-<!-- Slider main container -->
-</section>
-<section id="follow">
-  <h3>FOLLOW AND CONNECT WITH US
-<span>@WAJUCREATIVEAGENCY</span></h3>
-</section>
-<footer>
-  <h2>Join The Email List, Stay Elevated.</h2>
-  <p>Every month, you’ll get actionable tips to grow your brand — plus an inside look at client projects, creative process moments, and what we’re building behind the scenes at Truly Elevated. It’s strategy, storytelling, and inspo — straight to your inbox.</p>
-  <form action="" method="get" accept-charset="utf-8">
-    <label for="Email">Email*</label>
-    <input type="email" name="" id="" value="" />
-    <button type="submit">Submit</button>
-  </form>
-  <div class="quicklinks">
-    <a href="ff">FAQS</a>
-    <a href="#">Privacy Policy</a>
-      <div class="">
-    Enail: <a href="#" style="display: inline-block;">hello@wajucreative
-    com</a>
-  </div>
-  </div>
-<p style="padding: 30px 0px;">© 2025 by Waju Creative Agency Inc.</p>
-</footer>
-</div>
-</div>
 </body>
 <script src="main.js" type="text/javascript" charset="utf-8"></script>
 <script type="module" src="swiper.js"></script>
@@ -323,4 +344,5 @@ You don’t have to keep postponing your launch because "it’s not ready."
     arrow.classList.toggle("rotate");
   }
 </script>
+
 </html>
