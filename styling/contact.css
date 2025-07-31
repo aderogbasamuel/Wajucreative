@@ -22,10 +22,15 @@
 }
 
 section#form{
-  background: var(--moss-green);
+
   padding: 30px;
-  height: 100vh;
+    background-image: linear-gradient(180deg, var(--moss-green) 50%, #FFFFFF00 10%);
+
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0;
 }
 section#form p{
   text-align: center;
@@ -37,6 +42,7 @@ section#form form{
       background: rgba(225, 255, 183, 1);
       margin-top: 30px;
       border: 1px solid var(--dark-grey);
+      width: 350px;
     }
     section#form form label{
       text-align: left;
@@ -85,7 +91,7 @@ section#form form{
       width: 100%;
     }
     #cta3{
-      margin-top: 500px;
+      margin-top: 0;
   background-image: url("/images/Artboard 9.png");
   background-position: center;
   background-size: cover;
