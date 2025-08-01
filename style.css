@@ -208,6 +208,7 @@ nav a:hover {
   justify-self: center;
   margin-top: 1rem;
   font-size: 15px;
+  line-height: 20px;
   animation: fadeIn 4s ease-in-out;
   
 }
@@ -896,15 +897,4 @@ footer form button {
   text-decoration: none;
   display: block;
   margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-  section {
-    padding: 200px;
-    background: #000FB7;
-  }
-  
-  section h2 {
-    font-size: 500px;
-  }
 }

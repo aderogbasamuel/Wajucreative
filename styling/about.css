@@ -99,24 +99,28 @@ section#aboutme h2 {
   font-weight: 400;
   font-size: 30px;
 }
-
-section#aboutme p {
-  font-weight: 550;
-  font-size: 21px;
-  line-height: 25px;
+section#aboutme ul{
+  font-weight: 500;font-size: 20px; line-height: 20px;text-align: left;
+  padding: 10px;
+}
+ section#aboutme .text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
   margin-top: 20px;
   padding: 0px 10px;
 }
 
-section#aboutme p i {
+section#aboutme .text i {
   color: var(--moss-green);
   font-weight: 400;
 }
-        @media (min-width: 768px) {
-          section#aboutme{
-          padding: 4rem 10rem;
-          }
-        }
+
+@media (min-width: 768px) {
+  section#aboutme {
+    padding: 4rem 10rem;
+  }
+}
 
 section#ourvalues {
   background: var(--moss-green);
@@ -161,14 +165,16 @@ section#ourvalues ul li:nth-child(even) p {
   animation: text-scroll-2 10s linear infinite;
   
 }
-        @media (min-width: 768px) {
-          section#ourvalues h2{
-            font-size: 3rem;
-          }
-          section#ourvalues ul li p{
-            font-size: 6rem;
-          }
-        }
+
+@media (min-width: 768px) {
+  section#ourvalues h2 {
+    font-size: 3rem;
+  }
+  
+  section#ourvalues ul li p {
+    font-size: 6rem;
+  }
+}
 
 @keyframes text-scroll {
   0% {
@@ -226,23 +232,35 @@ section#ourvalues ul li:nth-child(even) p {
   text-transform: uppercase;
 }
 
-        @media (min-width: 768px) {
-          section#about-founder .text{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            text-align: left;
-            margin-top: 10px;
-          }
-          section#about-founder,#reason,#aboutme,#cta2{
-            padding: 4rem 8rem;
-          }
-          #about-founder h2,#reason h2,#aboutme h2,#cta2 h2{
-            font-size: 3rem;
-          }
-          #about-founder p,#reason p,#aboutme p,#cta2 p{
-            font-size: 20px;
-            line-height: 20px;
-          }
-
-
-        }
+@media (min-width: 768px) {
+  section#about-founder .text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  section#about-founder,
+  #reason,
+  #aboutme,
+  #cta2 {
+    padding: 4rem 8rem;
+  }
+  
+  #about-founder h2,
+  #reason h2,
+  #aboutme h2,
+  #cta2 h2 {
+    font-size: 3rem;
+  }
+  
+  #about-founder p,
+  #reason p,
+  #aboutme p,
+  #cta2 p {
+    font-size: 23px;
+    line-height: 20px;
+  }
+  
+  
+}
