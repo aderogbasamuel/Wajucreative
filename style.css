@@ -56,7 +56,7 @@ body {
 
 .bg {
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   position: fixed;
   background-image: url(images/94f55a_faf3aa3282134f2a96e71420436316d1~mv2.jpg);
   background-size: cover;
@@ -182,6 +182,7 @@ nav a:hover {
   color: white;
   text-align: center;
   padding: 6rem 2rem;
+  text-align: center;
 }
 
 .hero h2 {
@@ -340,13 +341,16 @@ nav a:hover {
   margin-top: 8px;
 }
 
-#about button {
+#about a {
   background: var(--moss-green);
   padding: 20px 40px;
   color: #fff;
   margin-top: 8px;
   font-size: 15px;
   font-weight: 400;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
 }
 
 #about img {

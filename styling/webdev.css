@@ -1,0 +1,241 @@
+
+#bg{
+  width: 100vw;
+background-size: cover;
+background-position: center;
+z-index: -10;
+top: 0;
+left: 0;
+height: fit-content;
+overflow: scroll;
+}
+.body{
+  background: var(--lightgrey);
+  width: 100%;
+  clip-path: inset(0 0 0 0);
+  position: relative;
+}
+
+.herobg{
+  background-image: url("/images/Artboard 9.png");
+  background-position: center;
+  background-size: cover;
+}
+.herobg .hero{
+  padding: 80px 20px;
+  background: rgba(0, 0, 0, .6
+  );
+}
+.herobg .hero h2{
+  margin: 0;
+}
+.herobg .hero p{
+  padding: 0;
+  margin: 0;
+  font-weight: 450;
+}
+.herobg .hero p a{
+  text-decoration: none;
+  color: #fff;
+}
+section#text{
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+  margin-top: 20px;
+}
+section#text p{
+  text-align: left;
+  color: var(--dark-grey);
+  font-size: 20px;
+  line-height: 20px;
+}
+
+section#text a {
+  background: var(--rust-brown);
+  padding: 10px;
+  display: block;
+  width: fit-content;
+  padding: 15px 50px;
+  color: #fff;
+  margin: 7px 0px;
+  font-size: 15px;
+  font-weight: 400;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#bg .img {
+  background-image: url(/images/newipadagain.png);
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  transform: translateX(-0px);
+  background-position: center;
+}
+
+section#reason {
+  padding: 50px 0px;
+  padding-bottom: 0;
+  background: var(--moss-green);
+  color: #fff;
+  font-size: 20px;
+}
+
+#reason h2 {
+  padding: 0px 10px;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 10px 0px;
+  
+  
+}
+
+#reason h2 span {
+  color: var(--moss-green);
+  display: inline-block;
+}
+
+#reason p {
+  padding: 30px;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+}
+section#offers h2{
+  padding: 0px 10px;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 10px 0px;
+  text-align: center;
+  color: var(--moss-green);
+  margin-top: 50px;
+}
+section#offers p{
+  padding: 0px 20px;
+  text-align: center;
+  
+}
+section#offers ul{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 0px;
+  list-style: none;
+}
+section#offers ul li{
+  border: 1.5px solid var(--moss-green);
+  border-top: 0;
+    background: rgba(225, 255, 183, .7);
+  border-radius: 0px;
+  padding: 15px 10px;
+  text-align: center;
+}
+section#offers ul li:nth-child(1){
+  border-top: 1.5px solid var(--moss-green);
+}
+section#howitworks{
+  
+}
+section#howitworks h2{
+  padding: 0px 10px;
+font-size: 35px;
+font-weight: 600;
+margin: 10px 0px;
+text-align: center;
+color: var(--dark-grey);
+margin-top: 50px;
+}
+section#howitworks .cards{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+section#howitworks .card{
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 213, 188, 1);;
+  width: 300px;
+}
+section#howitworks .card .heading{
+  background: var(--rust-brown);
+  color: var(--lightgrey);
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+section#howitworks .card .text{
+  padding: 10px;
+}
+section#howitworks .cards .card:nth-child(even){
+  align-self: flex-end;
+  background: rgba(225, 255, 183, 1);
+
+}
+section#howitworks .cards .card:nth-child(even) .heading{
+  background: var(--moss-green);
+
+
+}
+section#forwho{
+  padding: 50px 0px;
+text-align:left;
+background: var(--moss-green);
+color: #fff;
+font-size: 20px;
+margin-top: 20px;
+}
+section#forwho h2{
+  padding: 0px 20px;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 10px 0px;
+}
+section#forwho ul{
+  list-style: circle;
+  padding: 0px 30px;
+  line-height: 20px;
+}
+#cta3{
+      margin-top: 0;
+  background-image: url("/images/Artboard 9.png");
+  background-position: center;
+  background-size: cover;
+}
+#cta3 .overlay{
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, .6
+  );
+  text-align: center;
+}
+#cta3 .overlay h2{
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+}
+#cta3 .overlay p{
+  padding: 0;
+  margin: 0;
+  font-weight: 450;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+}
+#cta3 .overlay a{
+  text-decoration: none;
+  padding: 15px 30px;
+width: 100%;
+background: var(--rust-brown);
+color: #fff;
+font-size: 18px;
+font-weight: 400;
+display: inline-block;
+width: fit-content;
+justify-self: center;
+}
