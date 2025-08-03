@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who I Work With | Creative Agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <style>
+        :root {
+            --dark-grey: #242424;
+            --lightgrey: #f8f8f8;
+            --moss-green: #457A00;
+            --rust-brown: #7a2f00;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            background-color: var(--lightgrey);
+            color: var(--dark-grey);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background-color: var(--rust-brown);
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .btn:hover {
+            background-color: var(--moss-green);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--dark-grey);
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--rust-brown);
+        }
+
+        .section-title p {
+            max-width: 700px;
+            margin: 20px auto 0;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Header Styles */
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(36, 36, 36, 0.8), rgba(36, 36, 36, 0.8)), url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        /* Client Types Section */
+        .client-types {
+            background-color: white;
+            padding: 80px 0;
+        }
+
+        .client-type {
+            margin-bottom: 60px;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        .client-type:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .client-type-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .client-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--moss-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .client-icon i {
+            color: white;
+            font-size: 1.8rem;
+        }
+
+        .client-type-header h3 {
+            font-size: 1.8rem;
+            color: var(--dark-grey);
+        }
+
+        .client-type-header p {
+            color: var(--rust-brown);
+            font-weight: 600;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        .client-type h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--moss-green);
+        }
+
+        .client-type p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .quote-list {
+            background: rgba(121, 170, 7, 0.1);
+            padding: 20px;
+            border-left: 4px solid var(--moss-green);
+            margin: 25px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .quote-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .quote-list li::before {
+            content: "●";
+            position: absolute;
+            left: 0;
+            color: var(--rust-brown);
+        }
+
+        /* Why It Works Section */
+        .why-works {
+            background: linear-gradient(rgba(69, 122, 0, 0.05), rgba(69, 122, 0, 0.05));
+        }
+
+        .why-works-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .why-works-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            color: var(--dark-grey);
+        }
+
+        .why-works-content p {
+            margin-bottom: 25px;
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .benefit-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--rust-brown);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .benefit-icon i {
+            color: white;
+            font-size: 1.8rem;
+        }
+
+        .benefit-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--dark-grey);
+        }
+
+        .benefit-card p {
+            color: #555;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(rgba(122, 47, 0, 0.9), rgba(122, 47, 0, 0.9)), url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+            text-align: center;
+            color: white;
+        }
+
+        .cta-content {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .cta-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .cta-btn {
+            background: white;
+            color: var(--rust-brown);
+            font-weight: 700;
+        }
+
+        .cta-btn:hover {
+            background: var(--moss-green);
+            color: white;
+        }
+
+        /* Footer */
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: var(--transition);
+            color: white;
+        }
+
+        .social-links a:hover {
+            background: var(--moss-green);
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #bdc3c7;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--moss-green);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #bdc3c7;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .menu-btn {
+                display: block;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                right: -100%;
+                width: 300px;
+                height: calc(100vh - 80px);
+                background: white;
+                flex-direction: column;
+                padding: 40px 20px;
+                transition: var(--transition);
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-menu.active {
+                right: 0;
+            }
+
+            .nav-menu li {
+                margin: 15px 0;
+            }
+
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .client-type-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .client-icon {
+                margin: 0 auto 15px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+
+            .client-type {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/+234 813 950 9235" class="whatsapp" style="position: fixed; bottom: 20px; right: 20px; z-index: 100; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+        <i class="fab fa-whatsapp" style="color: white; font-size: 30px;"></i>
+    </a>
+
+    <!-- Header -->
+      <header>
+        <img src="images/logo.png" alt="logo" height="50px" />
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        <nav id="desktop-nav">
+          <span onclick="closeNav()" class="closebtn">x</span>
+          
+          <a href="#about">Home</a>
+          <a href="about.html">About</a>
+          <div class="toggle-container"
+          style="color: #fff;border: 0;text-align: left;margin: 0;">
+            <div class="toggle-header" onclick="toggleText(this)" style="text-align: left;justify-content:start ;padding: 0;gap: 8px;font-size: 18px;">
+              <span>OUR SERVICES </span>
+              <span class="arrow">  ></span>
+            </div>
+            <div class="toggle-content" style="text-align: left;padding: 0px;padding-top: 15px;font-size: 15px;transform: translateX(-5px);">
+              <br />
+              <a href="contentstrategy&creation.html" style="font-size: 15px;">Contents Creation</a>
+              <br /><br />
+              <br />
+              <a href="web development.html"style="font-size: 15px;">Web Design</a>
+              <br /><br /><br />
+              <a href="web development.html"style="font-size: 15px;">Photography</a>
+              <br />
+            </div>
+          </div>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+      <nav id="mobile-nav" class="mobile" style="display: none;">
+      </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Who I Work With</h1>
+            <p>Not everyone needs content that converts. But if you're building a service brand that deserves attention, you're in the right place.</p>
+            <a href="#clients" class="btn">Discover More</a>
+        </div>
+    </section>
+
+    <!-- Client Types Section -->
+    <section id="clients" class="client-types">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Ideal Clients</h2>
+                <p>I work with service-based brands that are ready to look and operate on the level they've worked hard to reach</p>
+            </div>
+            
+            <div class="client-type">
+                <div class="client-type-header">
+                    <div class="client-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div>
+                        <h3>Coaches, Consultants & Personal Brands</h3>
+                        <p>Positioning You as the Expert You Already Are</p>
+                    </div>
+                </div>
+                
+                <p>You're building a brand based on your experience, knowledge, and transformation — not products. Your face is your storefront, your voice is your authority, and your content? That's your first impression.</p>
+                
+                <h4>But let's be honest:</h4>
+                <p>Most coaches, stylists, and consultants are out here with graphics that don't match their value. Your offers are good, but your visuals look like you just got started.</p>
+                
+                <div class="quote-list">
+                    <p>And you've probably said things like:</p>
+                    <ul>
+                        <li>"I don't know what to post anymore"</li>
+                        <li>"I don't want to keep using design templates that feel off"</li>
+                        <li>"I have a lot to say, but it's not coming out right online"</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="client-type">
+                <div class="client-type-header">
+                    <div class="client-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div>
+                        <h3>Modern Service-Based Businesses</h3>
+                        <p>Building Visual Presence for Professional, Reputation-Driven Brands</p>
+                    </div>
+                </div>
+                
+                <p>You're already doing the work. Clients trust you, referrals are rolling in, and your services speak for themselves — but your <b>online presence hasn't caught up.</b></p>
+                
+                <p>Maybe your website is outdated. Maybe your IG feed looks like an intern runs it. Maybe you don't even have a consistent digital presence at all.</p>
+                
+                <h4>Here's the truth:</h4>
+                <p>Even the best services get overlooked when the visuals don't match the value. I help growing service brands build trust before the first conversation — through design, strategy, and clarity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why It Works Section -->
+    <section class="why-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why This Approach Works</h2>
+            </div>
+            
+            <div class="why-works-content">
+                <p>You've probably seen this before: a coach who's brilliant but has Canva chaos on their feed. Or a professional brand that's been around for years — but has no website or content to show for it.</p>
+                
+                <p>People assume you're not ready. Or worse, not legit. When you fix how your brand shows up visually and strategically, you change the conversation. You attract better-fit clients, close faster, and grow with more confidence.</p>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4>Builds Trust</h4>
+                        <p>Professional visuals establish credibility before the first conversation even happens</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h4>Attracts Ideal Clients</h4>
+                        <p>Strategic positioning helps you attract clients who value your expertise</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4>Accelerates Growth</h4>
+                        <p>Consistent, high-quality content builds momentum for your business</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Elevate Your Brand?</h2>
+                <p>If you're building a service brand that deserves attention, let's create content and design that positions you as the expert you are.</p>
+                <a href="contact.html" class="btn cta-btn">Schedule a Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+          <footer>
+        <h2>Join The Email List, Stay Elevated.</h2>
+        <p>Every month, you’ll get actionable tips to grow your brand — plus an inside look at client projects, creative process moments, and what we’re building behind the scenes at Truly Elevated. It’s strategy, storytelling, and inspo — straight to your inbox.</p>
+        <form action="" method="get" accept-charset="utf-8">
+          <label for="Email">Email*</label>
+          <input type="email" name="" id="" value="" />
+          <button type="submit">Submit</button>
+        </form>
+        <div class="quicklinks">
+          <a href="ff">FAQS</a>
+          <a href="#">Privacy Policy</a>
+          <div class="">
+            Enail: <a href="#" style="display: inline-block;">hello@wajucreative
+              com</a>
+          </div>
+        </div>
+        <p style="padding: 30px 0px;">© 2025 by Waju Creative Inc.</p>
+      </footer>
+
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.querySelector('.menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-menu') && !e.target.closest('.menu-btn')) {
+                navMenu.classList.remove('active');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

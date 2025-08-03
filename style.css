@@ -13,7 +13,8 @@
   --lightgrey: #f8f8f8;
   --moss-green: #457A00;
   --rust-brown: #7a2f00;
-  
+        --transition: all 0.3s ease;
+
   
 }
 
@@ -27,7 +28,7 @@
   font-family: figtree;
 }
 
-.whatsapp {
+/*.whatsapp {
   position: fixed;
   botom: 100px;
   left: 0;
@@ -36,7 +37,7 @@
   height: 100px;
   z-index: 10;
 }
-
+*/
 .whatsapp img {
   width: 100px;
 }
@@ -837,7 +838,7 @@ footer form button {
 }
 
 .toggle-container {
-  max-width: 400px;
+  max-width: 100%;
   margin: 0px 10px;
   font-family: sans-serif;
   border-top: 1px solid black;
@@ -860,12 +861,11 @@ footer form button {
 
 .arrow {
   transition: transform 0.3s;
-  position: absolute;
-  right: 20px;
+  transform: rotate(90deg);
 }
 
 .arrow.rotate {
-  transform: rotate(180deg);
+  transform: rotate(270deg);
 }
 
 .toggle-content {
