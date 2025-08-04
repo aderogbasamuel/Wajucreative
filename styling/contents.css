@@ -14,7 +14,13 @@
   font-size: 35px;
   color: #fff;
 }
-
+.herobg .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      font-weight: 300;
+      line-height: 1.2rem;
+      text-align: center;
+    }
 section#note {
   padding: 50px 20px;
   
@@ -146,10 +152,10 @@ section#steps {
 
 section#steps h2 {
   padding: 0px 10px;
-  padding-left: 30px;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 400;
   margin: 5px 0px;
+  text-align: center;
 }
 
 section#steps .cards {
@@ -173,12 +179,12 @@ section#steps .cards .card .head{
   align-items: center;
   gap: 10px;
   font-size: 20px;
-  color: var(--rust-brown);
+  color: var(--moss-green);
   font-weight: 500;
 }
 section#steps .cards .card .head .no {
   font-size: 4rem;
-  color: var(--rust-brown);
+  color: var(----moss-green);
   font-weight: 700;
 }
 
@@ -189,7 +195,7 @@ section#steps .cards .card:hover {
 section#steps .cards .card .card-content{
   font-size: 18px;
   padding: 20px 0;
-  color: var(--rust-brown);
+  color: var(--moss-green);
   line-height: 25px;
 }
 #cta3 {
@@ -235,3 +241,9 @@ section#steps .cards .card .card-content{
   justify-self: center;
   margin-top: 10px;
 }
+
+        @media (min-width: 768px) {
+          .herobg .hero,section#note,section#reason,section#include,section#builtfor,section#steps,section#cta3 .overlay{
+            padding: 100px;
+          }
+        }
