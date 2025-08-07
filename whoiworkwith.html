@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,45 +9,46 @@
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
     <link rel="stylesheet" href="styling/who.css" type="text/css" media="all" />
 </head>
+
 <body>
     <!-- WhatsApp Float Button -->
     <a href="https://wa.me/+234 813 950 9235" class="whatsapp" style="position: fixed; bottom: 20px; right: 20px; z-index: 100; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
         <i class="fab fa-whatsapp" style="color: white; font-size: 30px;"></i>
     </a>
-
+    
     <!-- Header -->
-            <header>
+    <header>
         <img src="images/logo.png" alt="logo" height="50px" />
         <div class="menu-btn" onclick="toggleMenu()">☰</div>
         <nav id="desktop-nav">
-          <span onclick="closeNav()" class="closebtn">x</span>
-          
-          <a href="#about">Home</a>
-          <a href="about.html">About</a>
-          <div class="toggle-container" style="color: #fff;border: 0;text-align: left;margin: 0;">
-            <div class="toggle-header" onclick="toggleText(this)" style="text-align: left;justify-content:start ;padding: 0;gap: 8px;font-size: 18px;">
-              <span>OUR SERVICES </span>
-              <span class="arrow"> ></span>
+            <span onclick="closeNav()" class="closebtn">x</span>
+            
+            <a href="#about">Home</a>
+            <a href="about.html">About</a>
+            <div class="toggle-container" style="color: #fff;border: 0;text-align: left;margin: 0;">
+                <div class="toggle-header" onclick="toggleText(this)" style="text-align: left;justify-content:start ;padding: 0;gap: 8px;font-size: 18px;">
+                    <span>OUR SERVICES </span>
+                    <span class="arrow"> ></span>
+                </div>
+                <div class="toggle-content" style="text-align: left;padding: 0px;padding-top: 15px;font-size: 15px;transform: translateX(-5px);">
+                    <br />
+                    <a href="contentstrategy&creation.html" style="font-size: 15px;">Contents Creation</a>
+                    <br /><br />
+                    <br />
+                    <a href="web development.html" style="font-size: 15px;">Web Design</a>
+                    <br /><br /><br />
+                    <a href="photography.html" style="font-size: 15px;">Photography</a>
+                    <br />
+                </div>
             </div>
-            <div class="toggle-content" style="text-align: left;padding: 0px;padding-top: 15px;font-size: 15px;transform: translateX(-5px);">
-              <br />
-              <a href="contentstrategy&creation.html" style="font-size: 15px;">Contents Creation</a>
-              <br /><br />
-              <br />
-              <a href="web development.html" style="font-size: 15px;">Web Design</a>
-              <br /><br /><br />
-              <a href="photography.html" style="font-size: 15px;">Photography</a>
-              <br />
-            </div>
-          </div>
-          <a href="contact.html">Contact</a>
-          <a href="whoiworkwith.html">Who I Work With</a>
+            <a href="contact.html">Contact</a>
+            <a href="whoiworkwith.html">Who I Work With</a>
         </nav>
-      </header>
-
-      <nav id="mobile-nav" class="mobile" style="display: none;">
-      </nav>
-
+    </header>
+    
+    <nav id="mobile-nav" class="mobile" style="display: none;">
+    </nav>
+    
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
@@ -55,9 +57,9 @@
             <a href="#clients" class="btn">Discover More</a>
         </div>
     </section>
-
+    
     <!-- Client Types Section -->
-    <section id="clients" class="client-types">""
+    <section id="clients" class="client-types">
         <div class="container">
             <div class="section-title">
                 <h2>My <span>Ideal Clients</span></h2>
@@ -110,7 +112,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Why It Works Section -->
     <section class="why-works">
         <div class="container">
@@ -151,7 +153,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
@@ -162,28 +164,28 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Footer -->
-          <footer>
+    <footer>
         <h2>Join The Email List, Stay Elevated.</h2>
         <p>Every month, you’ll get actionable tips to grow your brand — plus an inside look at client projects, creative process moments, and what we’re building behind the scenes at Truly Elevated. It’s strategy, storytelling, and inspo — straight to your inbox.</p>
         <form action="" method="get" accept-charset="utf-8">
-          <label for="Email">Email*</label>
-          <input type="email" name="" id="" value="" />
-          <button type="submit">Submit</button>
+            <label for="Email">Email*</label>
+            <input type="email" name="" id="" value="" />
+            <button type="submit">Submit</button>
         </form>
         <div class="quicklinks">
-          <a href="ff">FAQS</a>
-          <a href="#">Privacy Policy</a>
-          <div class="">
-            Enail: <a href="#" style="display: inline-block;">hello@wajucreative
-              com</a>
-          </div>
+            <a href="ff">FAQS</a>
+            <a href="#">Privacy Policy</a>
+            <div class="">
+                Enail: <a href="#" style="display: inline-block;">hello@wajucreative
+                    com</a>
+            </div>
         </div>
         <p style="padding: 30px 0px;">© 2025 by Waju Creative Inc.</p>
-      </footer>
-
-
+    </footer>
+    
+    
     <script>
         // Mobile Menu Toggle
         const menuBtn = document.querySelector('.menu-btn');
@@ -219,4 +221,5 @@
         });
     </script>
 </body>
+
 </html>
