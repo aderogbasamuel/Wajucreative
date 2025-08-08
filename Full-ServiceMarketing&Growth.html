@@ -1,14 +1,486 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Service Marketing & Growth | Creative Agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="styling/services.css" type="text/css" media="all" />
 </head>
-
 <body>
-  
-</body>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/+1234567890" class="whatsapp" style="position: fixed; bottom: 20px; right: 20px; z-index: 100; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+        <i class="fab fa-whatsapp" style="color: white; font-size: 30px;"></i>
+    </a>
 
+    <!-- Header -->
+              <header>
+        <img src="images/logo.png" alt="logo" height="50px" />
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        <nav id="desktop-nav">
+          <span onclick="closeNav()" class="closebtn">x</span>
+          
+          <a href="#about">Home</a>
+          <a href="about.html">About</a>
+          <div class="toggle-container" style="color: #fff;border: 0;text-align: left;margin: 0;">
+            <div class="toggle-header" onclick="toggleText(this)" style="text-align: left;justify-content:start ;padding: 0;gap: 8px;font-size: 18px;">
+              <span>OUR SERVICES </span>
+              <span class="arrow"> ></span>
+            </div>
+            <div class="toggle-content" style="text-align: left;padding: 0px;padding-top: 15px;font-size: 15px;transform: translateX(-5px);">
+              <br />
+              <a href="contentstrategy&creation.html" style="font-size: 15px;">Contents Creation</a>
+              <br /><br />
+              <br />
+              <a href="web development.html" style="font-size: 15px;">Web Design</a>
+              <br /><br /><br />
+              <a href="photography.html" style="font-size: 15px;">Photography</a>
+              <br />
+            </div>
+          </div>
+          <a href="contact.html">Contact</a>
+          <a href="whoiworkwith.html">Who I Work With</a>
+        </nav>
+      </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Done-for-You Marketing That Grows with You</h1>
+            <p>You've built the business. You've got the offer. But marketing it all? That's the exhausting part. At Waju Creative, I help service-based businesses simplify their marketing, scale visibility, and build lasting client relationships.</p>
+            <a href="#services" class="btn">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>What's Included</h2>
+                <p>Let's break it down path by path - with a clear explanation of how it all works together to grow your brand</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-number">1</div>
+                        <h3>Social Media Marketing</h3>
+                    </div>
+                    <div class="service-content">
+                        <h4>Your brand deserves more than random posts</h4>
+                        <p>This is the frontline of your business. It's where people meet you, connect with your message and decide whether to follow, engage, or click through. But to make that happen, your presence must be intentional, aligned, and consistent.</p>
+                        
+                        <h4>Here's what I handle:</h4>
+                        <ul class="service-list">
+                            <li>Platform selection (IG, TikTok, FB, LinkedIn, etc.) based on your industry and audience</li>
+                            <li>Monthly content strategy built around your offers, events, promos, and goals</li>
+                            <li>Branded visuals: flyers, carousels, quotes, reels all aligned with your voice</li>
+                            <li>Strategic captions, hashtags, and call-to-actions (CTAs)</li>
+                            <li>Posting schedule (automated or assisted)</li>
+                            <li>Weekly or bi-weekly performance check-ins</li>
+                        </ul>
+                        
+                        <div class="service-how">
+                            <h4>How it works with everything else:</h4>
+                            <p>Social media becomes the entry point into your brand. It's where people get curious and start paying attention. It links directly to your website, email opt-in, and sales funnels - making it the hub of your marketing.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-number">2</div>
+                        <h3>Content Creation</h3>
+                    </div>
+                    <div class="service-content">
+                        <h4>Content that not only looks good - it builds trust and drives action</h4>
+                        <p>This is where your voice meets visuals. Content is not just what you post on social media - it includes launch graphics, ads, email visuals, website banners, lead magnets, PDF guides, and more.</p>
+                        
+                        <h4>Here's what I create:</h4>
+                        <ul class="service-list">
+                            <li>Launch visuals and countdowns</li>
+                            <li>Video snippets and reels (edited from your phone or my drone, if local)</li>
+                            <li>Visual storytelling content for your service</li>
+                            <li>Consistent branded templates for posts</li>
+                            <li>Educational content that builds credibility</li>
+                            <li>Thought-leadership visuals</li>
+                        </ul>
+                        
+                        <div class="service-how">
+                            <h4>How it fits into the system:</h4>
+                            <p>This content fuels your social media, website, email marketing, and even your ads. Everything looks and feels cohesive - giving your brand a premium and trustworthy appearance across all platforms.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-number">3</div>
+                        <h3>Web Design</h3>
+                    </div>
+                    <div class="service-content">
+                        <h4>Your brand's digital home should convert - not confuse</h4>
+                        <p>If your website isn't bringing you leads, booking calls, or converting visitors into paying clients it's not doing its job. I build clean, strategy-backed websites and funnels that do more than look nice - they drive results.</p>
+                        
+                        <h4>What I provide:</h4>
+                        <ul class="service-list">
+                            <li>Website wireframe design and content strategy</li>
+                            <li>Home, About, Services, Contact, FAQ, and optional Blog pages</li>
+                            <li>One-page sales funnels or multi-page websites</li>
+                            <li>Mobile-optimized, fast-loading design</li>
+                            <li>Booking integrations (Calendly, Acuity, Google Calendar)</li>
+                            <li>Lead magnet opt-ins and email capture</li>
+                            <li>Easy-to-update backend (you own it fully)</li>
+                        </ul>
+                        
+                        <div class="service-how">
+                            <h4>How it supports the rest:</h4>
+                            <p>All your marketing leads to your website. Your ads drive traffic here. Your social bio links here. Your email lead magnet lives here. Without it, everything else falls flat. It's your conversion hub.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-number">4</div>
+                        <h3>Search Engine Optimization</h3>
+                    </div>
+                    <div class="service-content">
+                        <h4>Be found on Google without paying for every click</h4>
+                        <p>SEO is what helps people find your business organically when they search for your services online. Whether you're a virtual coach or a physical clinic, showing up in search results builds trust and visibility without extra ad spend.</p>
+                        
+                        <h4>SEO elements I manage:</h4>
+                        <ul class="service-list">
+                            <li>Keyword research specific to your location or niche</li>
+                            <li>On-page SEO: titles, meta descriptions, URLs, image tags</li>
+                            <li>Internal linking for better site structure</li>
+                            <li>Page performance optimization</li>
+                            <li>Local SEO optimization (Google Business, etc.)</li>
+                            <li>Content suggestions for long-term growth</li>
+                        </ul>
+                        
+                        <div class="service-how">
+                            <h4>How it ties in:</h4>
+                            <p>SEO makes sure your marketing isn't just working today - it keeps working long after the post or campaign is done. It supports your web traffic, strengthens your content, and reduces your long-term dependency on ads.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-number">5</div>
+                        <h3>Email Marketing</h3>
+                    </div>
+                    <div class="service-content">
+                        <h4>Don't just rely on likes - build a list you own</h4>
+                        <p>Social media can disappear overnight, but email stays yours. This is how you stay connected to potential clients, nurture them over time, and sell without shouting.</p>
+                        
+                        <h4>Here's what I set up:</h4>
+                        <ul class="service-list">
+                            <li>Email platform setup (ConvertKit, MailerLite, Mailchimp, etc.)</li>
+                            <li>Branded welcome sequences</li>
+                            <li>Monthly newsletters or weekly updates</li>
+                            <li>Campaign emails for product/service launches</li>
+                            <li>Automated sequences for onboarding, reminders, etc.</li>
+                            <li>Lead magnet integration (PDF guides, checklists, mini trainings)</li>
+                        </ul>
+                        
+                        <div class="service-how">
+                            <h4>How it fits:</h4>
+                            <p>When someone sees your Instagram post → visits your site → downloads your freebie → they now enter your email funnel where they can receive consistent, helpful, and persuasive content until they're ready to buy.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-number">6</div>
+                        <h3>Paid Ads</h3>
+                    </div>
+                    <div class="service-content">
+                        <h4>Let's turn the faucet on and attract more dream clients faster</h4>
+                        <p>When you're ready to grow faster, paid ads help you scale your reach beyond your followers. I'll help you run strategic ads that convert - not just boost random posts.</p>
+                        
+                        <h4>What's included:</h4>
+                        <ul class="service-list">
+                            <li>Ad strategy session based on your offer</li>
+                            <li>Ad creative (visuals and copy)</li>
+                            <li>Target audience setup, pixel installation</li>
+                            <li>Campaign launch + A/B testing</li>
+                            <li>Weekly performance monitoring and optimization</li>
+                            <li>Funnel integration (send traffic to lead magnet, offer, booking, etc.)</li>
+                        </ul>
+                        
+                        <div class="service-how">
+                            <h4>How it works in sync:</h4>
+                            <p>Ads send traffic to your landing page or lead magnet → your website captures it → your email nurtures it → your content builds credibility → your strategy turns that traffic into paid clients. It's a full journey - not just a one-off sale.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>How It All Comes Together</h2>
+                <p>This is growth that's connected - not just random tactics</p>
+            </div>
+            
+            <div class="how-works-content">
+                <h3>This is growth that's connected</h3>
+                <p>No more hiring five different freelancers. No more guessing what works. No more showing up randomly.</p>
+                <p>Here's how it flows:</p>
+                
+                <div class="workflow">
+                    <div class="workflow-step">
+                        <div class="step-circle">1</div>
+                        <div class="step-text">They see your content on Instagram or LinkedIn</div>
+                    </div>
+                    
+                    <div class="workflow-step">
+                        <div class="step-circle">2</div>
+                        <div class="step-text">They click through to your website or landing page</div>
+                    </div>
+                    
+                    <div class="workflow-step">
+                        <div class="step-circle">3</div>
+                        <div class="step-text">They download a free guide and join your email list</div>
+                    </div>
+                    
+                    <div class="workflow-step">
+                        <div class="step-circle">4</div>
+                        <div class="step-text">They get consistent emails nurturing trust and showcasing offers</div>
+                    </div>
+                    
+                    <div class="workflow-step">
+                        <div class="step-circle">5</div>
+                        <div class="step-text">They see your ads again and again - building familiarity</div>
+                    </div>
+                    
+                    <div class="workflow-step">
+                        <div class="step-circle">6</div>
+                        <div class="step-text">They book a discovery call</div>
+                    </div>
+                    
+                    <div class="workflow-step">
+                        <div class="step-circle">7</div>
+                        <div class="step-text">You close the sale</div>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 40px; font-weight: 600;">You've now built a self-running system that grows your brand even when you're not online.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary Section -->
+    <section class="summary-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>What You Get</h2>
+                <p>Comprehensive marketing solutions in one package</p>
+            </div>
+            
+            <div class="summary-grid">
+                <div class="summary-card">
+                    <h3>Social Media</h3>
+                    <div class="summary-item">
+                        <span class="summary-category">Deliverables:</span>
+                        <span class="summary-deliverables">Strategy, captions, reels, flyers, carousels, scheduling</span>
+                    </div>
+                </div>
+                
+                <div class="summary-card">
+                    <h3>Content Design</h3>
+                    <div class="summary-item">
+                        <span class="summary-category">Deliverables:</span>
+                        <span class="summary-deliverables">Branded graphics, videos, launch visuals, templates</span>
+                    </div>
+                </div>
+                
+                <div class="summary-card">
+                    <h3>Web Design</h3>
+                    <div class="summary-item">
+                        <span class="summary-category">Deliverables:</span>
+                        <span class="summary-deliverables">Full site or landing page, mobile optimized, funnel-ready</span>
+                    </div>
+                </div>
+                
+                <div class="summary-card">
+                    <h3>SEO</h3>
+                    <div class="summary-item">
+                        <span class="summary-category">Deliverables:</span>
+                        <span class="summary-deliverables">On-page SEO, keywords, Google setup, content plan</span>
+                    </div>
+                </div>
+                
+                <div class="summary-card">
+                    <h3>Email Marketing</h3>
+                    <div class="summary-item">
+                        <span class="summary-category">Deliverables:</span>
+                        <span class="summary-deliverables">Platform setup, sequences, campaigns, lead magnets</span>
+                    </div>
+                </div>
+                
+                <div class="summary-card">
+                    <h3>Paid Ads</h3>
+                    <div class="summary-item">
+                        <span class="summary-category">Deliverables:</span>
+                        <span class="summary-deliverables">Strategy, visuals, setup, tracking, optimization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Whom Section -->
+    <section class="for-whom">
+        <div class="container">
+            <div class="section-title">
+                <h2>Who This Is For</h2>
+                <p>Ideal clients for our full-service marketing solution</p>
+            </div>
+            
+            <div class="for-whom-grid">
+                <div class="for-whom-card">
+                    <div class="for-whom-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Perfect For</h3>
+                    <ul class="for-whom-list">
+                        <li>Coaches or consultants ready to scale</li>
+                        <li>Clinics, schools, or local service-based businesses</li>
+                        <li>Personal brands who want to grow with clarity</li>
+                        <li>Service providers tired of doing it all themselves</li>
+                    </ul>
+                </div>
+                
+                <div class="for-whom-card">
+                    <div class="for-whom-icon">
+                        <i class="fas fa-times-circle"></i>
+                    </div>
+                    <h3>Not For</h3>
+                    <ul class="for-whom-list not-for-list">
+                        <li>DIY businesses not ready to invest in full growth</li>
+                        <li>Brands who only want occasional flyers</li>
+                        <li>Anyone unwilling to commit to real strategy</li>
+                        <li>Businesses not ready for execution</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Section -->
+    <section class="investment-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Investment & Timeline</h2>
+                <p>Transparent pricing and implementation process</p>
+            </div>
+            
+            <div class="investment-content">
+                <div class="price-tag">₦200,000+</div>
+                <p>Starts from ₦200,000 per month</p>
+                
+                <div class="investment-points">
+                    <div class="investment-point">
+                        <i class="fas fa-cogs"></i>
+                        <h4>Custom Packages</h4>
+                        <p>Available based on your business size and needs</p>
+                    </div>
+                    
+                    <div class="investment-point">
+                        <i class="fas fa-calendar-check"></i>
+                        <h4>Minimum Commitment</h4>
+                        <p>3-month commitment required for best results</p>
+                    </div>
+                    
+                    <div class="investment-point">
+                        <i class="fas fa-hourglass-start"></i>
+                        <h4>Implementation</h4>
+                        <p>2-3 weeks for full setup, then ongoing monthly management</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Grow?</h2>
+                <p>Let's simplify your marketing and scale your brand - with one partner, one system, and one plan that actually works.</p>
+                <a href="contact.html" class="btn cta-btn">Book a Free Discovery Call</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <footer>
+      <h2>Join The Email List, Stay Elevated.</h2>
+      <p>Every month, you’ll get actionable tips to grow your brand — plus an inside look at client projects, creative process moments, and what we’re building behind the scenes at Truly Elevated. It’s strategy, storytelling, and inspo — straight to your inbox.</p>
+      <form action="" method="get" accept-charset="utf-8">
+        <label for="Email">Email*</label>
+        <input type="email" name="" id="" value="" />
+        <button type="submit">Submit</button>
+      </form>
+      <div class="quicklinks">
+        <a href="ff">FAQS</a>
+        <a href="#">Privacy Policy</a>
+        <div class="">
+          Enail: <a href="#" style="display: inline-block;">hello@wajucreative
+            com</a>
+        </div>
+      </div>
+      <p style="padding: 30px 0px;">© 2025 by Waju Creative Inc.</p>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.querySelector('.menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-menu') && !e.target.closest('.menu-btn')) {
+                navMenu.classList.remove('active');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
 </html>
