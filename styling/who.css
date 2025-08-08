@@ -110,7 +110,7 @@ section {
 .client-type {
   margin-bottom: 60px;
   padding: 40px;
-  border-radius: 0px;
+  border-radius: 5px;
   transition: var(--transition);
   border: 1.5px solid var(--moss-green);
 
