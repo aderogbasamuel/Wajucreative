@@ -17,226 +17,233 @@
     <i class="fab fa-whatsapp" style="color: white; font-size: 30px;"></i>
   </a>
   
-    <div class="body">
-
-  <!-- Header -->
-        <header>
-        <img src="images/logo.png" alt="logo" height="50px" />
-        <div class="menu-btn" onclick="toggleMenu()">☰</div>
-        <nav id="desktop-nav">
-          <span onclick="closeNav()" class="closebtn">x</span>
-          
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <div class="toggle-container" style="color: #fff;border: 0;text-align: left;margin: 0;">
-            <div class="toggle-header" onclick="toggleText(this)" style="text-align: left;justify-content:start ;padding: 0;gap: 8px;font-size: 18px;">
-              <span>OUR SERVICES </span>
-              <span class="arrow"> ></span>
-            </div>
-            <div class="toggle-content" style="text-align: left;padding: 0px;padding-top: 15px;font-size: 15px;transform: translateX(-5px);">
-              <br />
-              <a href="contentstrategy&creation.html" style="font-size: 15px;">Contents Creation</a>
-              <br /><br />
-              <br />
-              <a href="web development.html" style="font-size: 15px;">Web Design</a>
-              <br /><br /><br />
-              <a href="photography.html" style="font-size: 15px;">Photography</a>
-              <br />
-            </div>
+  <div class="body">
+    
+    <!-- Header -->
+    <header>
+      <img src="images/logo.png" alt="logo" height="50px" />
+      <div class="menu-btn" onclick="toggleMenu()">☰</div>
+      <nav id="desktop-nav">
+        <span onclick="closeNav()" class="closebtn">x</span>
+        
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <div class="toggle-container" style="color: #fff;border: 0;text-align: left;margin: 0;">
+          <div class="toggle-header" onclick="toggleText(this)" style="text-align: left;justify-content:start ;padding: 0;gap: 8px;font-size: 18px;">
+            <span>OUR SERVICES </span>
+            <span class="arrow"> ></span>
           </div>
-          <a href="contact.html">Contact</a>
-          <a href="whoiworkwith.html">Who I Work With</a>
-        </nav>
-      </header>
-
-  <nav id="mobile-nav" class="mobile" style="display: none;">
-  </nav>
-  
-  <!-- Hero Section -->
-  <section class="heros">
-    <div class="hero-content">
-      <h1>Photography & Videography</h1>
-      <p>Visual content that captures your essence and makes your brand
-        unforgettable.</p>
-      <a href="#contact" class="btn">Book a Session</a>
-    </div>
-  </section>
-  
-  <!-- Gallery Section -->
-  <section id="gallery" class="section gallery">
-    <div class="container">
-      <div class="section-title">
-        <h2>Portfolio <span style="color: var(--moss-green);"> Gallery</span></h2>
-        <p>Explore our diverse photography portfolio</p>
+          <div class="toggle-content" style="text-align: left;padding: 0px;padding-top: 15px;font-size: 15px;transform: translateX(-5px);">
+            <br />
+            <a href="contentstrategy&creation.html" style="font-size: 15px;">Contents Creation</a>
+            <br /><br />
+            <br />
+            <a href="web development.html" style="font-size: 15px;">Web Design</a>
+            <br /><br /><br />
+            <a href="photography.html" style="font-size: 15px;">Photography</a>
+            <br />
+          </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="whoiworkwith.html">Who I Work With</a>
+      </nav>
+    </header>
+    
+    <nav id="mobile-nav" class="mobile" style="display: none;">
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="heros">
+      <div class="hero-content">
+        <h1>Photography & Videography</h1>
+        <p>Visual content that captures your essence and makes your brand
+          unforgettable.</p>
+        <a href="#contact" class="btn">Book a Session</a>
       </div>
-      
-      <div class="gallery-filter">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="wedding">Wedding</button>
-        <button class="filter-btn" data-filter="portrait">Portrait</button>
-        <button class="filter-btn" data-filter="commercial">Commercial</button>
-        <button class="filter-btn" data-filter="landscape">Landscape</button>
-      </div>
-      
-      <div class="gallery-grid">
-        <div class="gallery-item" data-category="wedding">
-          <img src="/images/AmandaShearPhoto-Cre8tively-013.jpg" alt="Wedding Photography">
-          <div class="gallery-overlay">
-            <h3>Elegant Wedding</h3>
-            <p>Romantic moments captured beautifully</p>
-          </div>
+    </section>
+    <h3 class="note">
+      You don’t just need visuals — you need content that feels <span>aligned</span>, looks <span>intentional</span>, and
+      positions your brand for <span>growth.</span>
+      Whether it’s a <span>content day</span>, an <span>event, a behind-the-scenes shoot, or promotional footage</span> — I
+      help you create photo and video assets that are <span>clean</span>, <span>on-brand</span>, and built to connect with your
+      <span>audience</span>.
+      Your service speaks for itself — now your <span>visuals will, too.</span>
+    </h3>
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <div class="section-title">
+          <h2>Portfolio <span style="color: var(--moss-green);"> Gallery</span></h2>
+          <p>Explore our diverse photography portfolio</p>
         </div>
         
-        <div class="gallery-item" data-category="portrait">
-          <img src="/images/AmandaShearPhoto-Cre8tively-013.jpg" alt="Portrait Photography">
-          <div class="gallery-overlay">
-            <h3>Professional Portrait</h3>
-            <p>Expressive and character-filled</p>
-          </div>
+        <div class="gallery-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="wedding">Wedding</button>
+          <button class="filter-btn" data-filter="portrait">Portrait</button>
+          <button class="filter-btn" data-filter="commercial">Commercial</button>
+          <button class="filter-btn" data-filter="landscape">Landscape</button>
         </div>
         
-        <div class="gallery-item" data-category="commercial">
-          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80" alt="Commercial Photography">
-          <div class="gallery-overlay">
-            <h3>Product Showcase</h3>
-            <p>Highlighting details and craftsmanship</p>
-          </div>
-        </div>
-        
-        <div class="gallery-item" data-category="landscape">
-          <img src="https://images.unsplash.com/photo-1506260408121-e353d10b87c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2028&q=80" alt="Landscape Photography">
-          <div class="gallery-overlay">
-            <h3>Mountain Majesty</h3>
-            <p>Nature's breathtaking beauty</p>
-          </div>
-        </div>
-        
-        <div class="gallery-item" data-category="wedding">
-          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Wedding Photography">
-          <div class="gallery-overlay">
-            <h3>First Dance</h3>
-            <p>Unforgettable moments</p>
-          </div>
-        </div>
-        
-        <div class="gallery-item" data-category="portrait">
-          <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Portrait Photography">
-          <div class="gallery-overlay">
-            <h3>Corporate Headshot</h3>
-            <p>Professional and approachable</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Services Section -->
-  <section id="services" class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2>My <span style="color: var(--moss-green);"> Approach</span></h2>
-        <p>Professional photography solutions for every need</p>
-      </div>
-      
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-img">
+        <div class="gallery-grid">
+          <div class="gallery-item" data-category="wedding">
             <img src="/images/AmandaShearPhoto-Cre8tively-013.jpg" alt="Wedding Photography">
+            <div class="gallery-overlay">
+              <h3>Elegant Wedding</h3>
+              <p>Romantic moments captured beautifully</p>
+            </div>
           </div>
-          <div class="service-content">
-            <h3>1. Pre-Shoot Planning</h3>
-            <p>We define the goal, style, and focus of your shoot — so every shot has purpose</p>
+          
+          <div class="gallery-item" data-category="portrait">
+            <img src="/images/AmandaShearPhoto-Cre8tively-013.jpg" alt="Portrait Photography">
+            <div class="gallery-overlay">
+              <h3>Professional Portrait</h3>
+              <p>Expressive and character-filled</p>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="commercial">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80" alt="Commercial Photography">
+            <div class="gallery-overlay">
+              <h3>Product Showcase</h3>
+              <p>Highlighting details and craftsmanship</p>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="landscape">
+            <img src="https://images.unsplash.com/photo-1506260408121-e353d10b87c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2028&q=80" alt="Landscape Photography">
+            <div class="gallery-overlay">
+              <h3>Mountain Majesty</h3>
+              <p>Nature's breathtaking beauty</p>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="wedding">
+            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Wedding Photography">
+            <div class="gallery-overlay">
+              <h3>First Dance</h3>
+              <p>Unforgettable moments</p>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="portrait">
+            <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Portrait Photography">
+            <div class="gallery-overlay">
+              <h3>Corporate Headshot</h3>
+              <p>Professional and approachable</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>My <span style="color: var(--moss-green);"> Approach</span></h2>
+          <p>Professional photography solutions for every need</p>
+        </div>
+        
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-img">
+              <img src="/images/AmandaShearPhoto-Cre8tively-013.jpg" alt="Wedding Photography">
+            </div>
+            <div class="service-content">
+              <h3>1. Pre-Shoot Planning</h3>
+              <p>We define the goal, style, and focus of your shoot — so every shot has purpose</p>
+            </div>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-img">
+              <img src="/images/Artboard 4.png" alt="Portrait Photography">
+            </div>
+            <div class="service-content">
+              <h3>2. Shoot Day</h3>
+              <p>Shoot Day
+                I handle direction, composition, and capturing both posed and natural moments. You
+                just show up.
+              </p>
+            </div>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-img">
+              <img src="/images/94f55a_faf3aa3282134f2a96e71420436316d1~mv2.jpg" alt="Commercial Photography">
+            </div>
+            <div class="service-content">
+              <h3>3. Delivery</h3>
+              <p>Final images and videos delivered in high-quality, ready-to-use formats for social media,
+                websites, or print..</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-img">
+              <img src="/images/94f55a_faf3aa3282134f2a96e71420436316d1~mv2.jpg" alt="Commercial Photography">
+            </div>
+            <div class="service-content">
+              <h3>4. Ongoing Visual Support (Optional)</h3>
+              <p>You can book me monthly, quarterly, or by event — based on your content needs.</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-title">
+          <h2>Why It Matters</h2>
+        </div>
+        <div class="testimonial-text">
+          ◆ Builds trust through professional, authentic visuals
+          <br />
+          ◆ Gives your content direction and consistency
+          <br />
+          ◆ Shows people what you do — not just what you say
+          <br />
+          ◆ Makes your brand feel premium, polished, and credible
+          <br />
+          ◆ Sets you apart in a crowded, scroll-heavy space
+          
+        </div>
+      </div>
+    </section>
+    <section id="abouts" class="section about">
+      <div class="container">
+        <div class="section-title">
+          <h2>What You <span style="color: var(--moss-green);"> Can Expect</span>
+          </h2>
+          <div class="about-content">
+            
+            <p>Whether you're launching, relaunching, hosting, or building — I’ll help you capture it the right
+              way.</p>
+            <div class="textt">
+              Content photography for your brand, workspace, or team
+              <br />
+              <br />
+              Behind-the-scenes & lifestyle shots for storytelling
+              <br />
+              <br />
+              Professional event coverage (clean & non-intrusive)
+              <br /><br />
+              Branded short-form video (for Reels, TikTok, YouTube Shorts)
+              <br /><br />
+              Promo clips and launch visuals
+              <br /><br />
+              Drone photography & cinematic aerial footage (on request)
+              <br /><br />
+            </div>
+            
           </div>
         </div>
         
-        <div class="service-card">
-          <div class="service-img">
-            <img src="/images/Artboard 4.png" alt="Portrait Photography">
-          </div>
-          <div class="service-content">
-            <h3>2. Shoot Day</h3>
-            <p>Shoot Day
-              I handle direction, composition, and capturing both posed and natural moments. You
-              just show up.
-            </p>
-          </div>
-        </div>
-        
-        <div class="service-card">
-          <div class="service-img">
-            <img src="/images/94f55a_faf3aa3282134f2a96e71420436316d1~mv2.jpg" alt="Commercial Photography">
-          </div>
-          <div class="service-content">
-            <h3>3. Delivery</h3>
-            <p>Final images and videos delivered in high-quality, ready-to-use formats for social media,
-              websites, or print..</p>
-          </div>
-        </div>
-        <div class="service-card">
-          <div class="service-img">
-            <img src="/images/94f55a_faf3aa3282134f2a96e71420436316d1~mv2.jpg" alt="Commercial Photography">
-          </div>
-          <div class="service-content">
-            <h3>4. Ongoing Visual Support (Optional)</h3>
-            <p>You can book me monthly, quarterly, or by event — based on your content needs.</p>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-  
-  <!-- Testimonials Section -->
-  <section class="section testimonials">
-    <div class="container">
-      <div class="section-title">
-        <h2>Why It Matters</h2>
-      </div>
-      <div class="testimonial-text">
-        ◆ Builds trust through professional, authentic visuals
-        <br />
-        ◆ Gives your content direction and consistency
-        <br />
-        ◆ Shows people what you do — not just what you say
-        <br />
-        ◆ Makes your brand feel premium, polished, and credible
-        <br />
-        ◆ Sets you apart in a crowded, scroll-heavy space
-        
-      </div>
-    </div>
-  </section>
-  <section id="abouts" class="section about">
-    <div class="container">
-      <div class="section-title">
-        <h2>What You  <span style="color: var(--moss-green);"> Can Expect</span>
-</h2>
-<div class="about-content">
-  
-        <p>Whether you're launching, relaunching, hosting, or building — I’ll help you capture it the right
-way.</p>
-<div class="textt">
-  Content photography for your brand, workspace, or team
-  <br />
-  <br />
- Behind-the-scenes & lifestyle shots for storytelling
- <br />
- <br />
- Professional event coverage (clean & non-intrusive)
-<br /><br />
- Branded short-form video (for Reels, TikTok, YouTube Shorts)
-<br /><br />
- Promo clips and launch visuals
-<br /><br />
- Drone photography & cinematic aerial footage (on request)
-<br /><br />
-</div>
-
-</div>
-      </div>
-      
-  </section>
-  <!-- About Section
+    </section>
+    <!-- About Section
   <section id="about" class="section about">
     <div class="container">
       <div class="section-title">
@@ -273,37 +280,37 @@ way.</p>
       </div>
     </div>
   </section>-->
-  
-  <!-- Contact CTA Section -->
-  <section id="contact" class="section contact-cta">
-    <div class="container">
-      <h2>Drone Option Available</h2>
-      <p>Need a bigger visual impact? Drone footage adds cinematic energy to your content. Perfect for
-        events, spaces, or simply giving your brand a different perspective.
-      </p>
-      <a href="#" class="btn">Contact Us Now</a>
-    </div>
-  </section>
-  
-  <!-- Footer -->
-  <footer>
-    <h2>Join The Email List, Stay Elevated.</h2>
-    <p>Every month, you’ll get actionable tips to grow your brand — plus an inside look at client projects, creative process moments, and what we’re building behind the scenes at Truly Elevated. It’s strategy, storytelling, and inspo — straight to your inbox.</p>
-    <form action="" method="get" accept-charset="utf-8">
-      <label for="Email">Email*</label>
-      <input type="email" name="" id="" value="" />
-      <button type="submit">Submit</button>
-    </form>
-    <div class="quicklinks">
-      <a href="ff">FAQS</a>
-      <a href="#">Privacy Policy</a>
-      <div class="">
-        Enail: <a href="#" style="display: inline-block;">hello@wajucreative
-          com</a>
+    
+    <!-- Contact CTA Section -->
+    <section id="contact" class="section contact-cta">
+      <div class="container">
+        <h2>Drone Option Available</h2>
+        <p>Need a bigger visual impact? Drone footage adds cinematic energy to your content. Perfect for
+          events, spaces, or simply giving your brand a different perspective.
+        </p>
+        <a href="#" class="btn">Contact Us Now</a>
       </div>
-    </div>
-    <p style="padding: 30px 0px;">© 2025 by Waju Creative Inc.</p>
-  </footer>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+      <h2>Join The Email List, Stay Elevated.</h2>
+      <p>Every month, you’ll get actionable tips to grow your brand — plus an inside look at client projects, creative process moments, and what we’re building behind the scenes at Truly Elevated. It’s strategy, storytelling, and inspo — straight to your inbox.</p>
+      <form action="" method="get" accept-charset="utf-8">
+        <label for="Email">Email*</label>
+        <input type="email" name="" id="" value="" />
+        <button type="submit">Submit</button>
+      </form>
+      <div class="quicklinks">
+        <a href="ff">FAQS</a>
+        <a href="#">Privacy Policy</a>
+        <div class="">
+          Enail: <a href="#" style="display: inline-block;">hello@wajucreative
+            com</a>
+        </div>
+      </div>
+      <p style="padding: 30px 0px;">© 2025 by Waju Creative Inc.</p>
+    </footer>
   </div>
   
   <script>

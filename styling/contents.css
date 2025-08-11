@@ -14,13 +14,15 @@
   font-size: 35px;
   color: #fff;
 }
+
 .herobg .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-      font-weight: 300;
-      line-height: 1.2rem;
-      text-align: center;
-    }
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 300;
+  line-height: 1.2rem;
+  text-align: center;
+}
+
 section#note {
   padding: 50px 20px;
   
@@ -160,10 +162,10 @@ section#steps h2 {
 
 section#steps .cards {
   padding: 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-    
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  
 }
 
 section#steps .cards .card {
@@ -174,7 +176,8 @@ section#steps .cards .card {
   transition: var(--transition);
   padding: 20px;
 }
-section#steps .cards .card .head{
+
+section#steps .cards .card .head {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -182,6 +185,7 @@ section#steps .cards .card .head{
   color: var(--moss-green);
   font-weight: 500;
 }
+
 section#steps .cards .card .head .no {
   font-size: 4rem;
   color: var(----moss-green);
@@ -192,12 +196,14 @@ section#steps .cards .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
-section#steps .cards .card .card-content{
+
+section#steps .cards .card .card-content {
   font-size: 18px;
   padding: 20px 0;
   color: var(--moss-green);
   line-height: 25px;
 }
+
 #cta3 {
   margin-top: 0;
   background-image: url("/images/Artboard 9.png");
@@ -242,8 +248,15 @@ section#steps .cards .card .card-content{
   margin-top: 10px;
 }
 
-        @media (min-width: 768px) {
-          .herobg .hero,section#note,section#reason,section#include,section#builtfor,section#steps,section#cta3 .overlay{
-            padding: 100px;
-          }
-        }
+@media (min-width: 768px) {
+
+  .herobg .hero,
+  section#note,
+  section#reason,
+  section#include,
+  section#builtfor,
+  section#steps,
+  section#cta3 .overlay {
+    padding: 100px;
+  }
+}

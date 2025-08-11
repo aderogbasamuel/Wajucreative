@@ -766,7 +766,6 @@ footer {
 footer p {
   font-size: 15px;
   margin-top: 20px;
-  line-height: 15px;
   padding: 0px 20px;
 }
 
@@ -806,7 +805,6 @@ footer form button {
   footer p {
     padding: 0 4rem;
     font-size: 20px;
-    line-height: 20px;
   }
   
   footer form {

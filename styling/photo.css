@@ -129,7 +129,17 @@
       line-height: 1.2rem;
       text-align: center;
     }
-
+    .note{
+      font-size: 25px;
+      padding: 20px 20px;
+      font-weight: 400;
+      padding-top: 80px;
+      text-align: left;
+    }
+    .note span{
+      color: var(--moss-green);
+      font-style: italic;
+    }
     /* Gallery Section */
     .gallery {
       background-color: var(--light-gray);
