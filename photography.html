@@ -313,7 +313,17 @@
       <p style="padding: 30px 0px;">© 2025 by Waju Creative Inc.</p>
     </footer>
   </div>
-  
+  <script src="main.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+  function toggleText(header) {
+    const arrow = header.querySelector(".arrow");
+    const content = header.nextElementSibling;
+    content.style.display = content.style.display === "block" ? "none" : "block";
+    arrow.classList.toggle("rotate");
+  }
+</script>
+
   <script>
     // Mobile Menu Toggle
     const menuBtn = document.querySelector('.menu-btn');
