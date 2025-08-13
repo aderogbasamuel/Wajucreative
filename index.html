@@ -6,9 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Welcome to waju creative" />
+  <meta name="author" content="Waju Creative">
+  <meta name="robots" content="index, follow">
+  <!-- Open Graph meta for social and richer previews -->
+  <meta property="og:title" content="WWaju Creative Agency">
+  <meta property="og:description" content="Check your current weather in any location. Fast and accurate.">
+  <meta property="og:image" content="https://your-domain.com/file_0000000021e86243a2df67a99f852c4b.png">
+  <meta property="og:url" content="https://weather-app-devdrogba.vercel.app">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Weather App-Weatherknow</title>
+  <link rel="icon" href="default.png" type="image/png">
+  <link rel="canonical" href="https://weather-app-devdrogba.vercel.app">
   <title>Waju Creative</title>
   <link rel="stylesheet" href="https://cdnjs.=.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+  
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css" />
@@ -92,7 +103,7 @@
       <section id="about">
         <div class="text">
           
-          <p class="heading fade-in" >You bring the vision.</p>
+          <p class="heading fade-in">You bring the vision.</p>
           <h2 class="fade-in"><span> I bring </span>the strategy, creative direction, and execution to make it real.</h2>
           <p class="subtext fade-in">At Waju Creative, I help service-based brands turn ideas into identities that feel authentic, look
             premium, and grow with purpose.
@@ -102,7 +113,7 @@
           <a href="about.html" class="fade-in">ABOUT THE FOUNDER</a>
         </div>
         
-        <img src="/images/AmandaShearPhoto-Cre8tively-013.jpg" alt="Founder Image" width="100%" class="fade-in"/>
+        <img src="/images/AmandaShearPhoto-Cre8tively-013.jpg" alt="Founder Image" width="100%" class="fade-in" />
       </section>
       <section id="whyus">
         <h2 class="fade-in"><span>You’ve got the vision.</span>
@@ -292,7 +303,9 @@
         <div class="toggle-container">
           <button class="course-accordion">
             <span>Discovery Call — Let’s Talk.</span>
-            <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></span>
+            <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down">
+                <path d="m6 9 6 6 6-6" />
+              </svg></span>
           </button>
           <div class="course-panel">
             <p>
@@ -302,7 +315,9 @@
         <div class="toggle-container">
           <button class="course-accordion">
             <span>Proposal — Your Custom Plan.</span>
-            <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></span>
+            <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down">
+                <path d="m6 9 6 6 6-6" />
+              </svg></span>
           </button>
           <div class="course-panel">
             <p>
@@ -313,7 +328,9 @@
         <div class="toggle-container">
           <button class="course-accordion">
             <span>Agreement & Invoice — We Make It Official.</span>
-            <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></span>
+            <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down">
+                <path d="m6 9 6 6 6-6" />
+              </svg></span>
           </button>
           <div class="course-panel">
             <p>
@@ -342,7 +359,7 @@
           So you can focus on your service.<b> I’ll make sure you’re seen.</b>
         </p>
         <br />
-        <a href="contact.html" >Book A Discovery Call</a>
+        <a href="contact.html">Book A Discovery Call</a>
         <!-- Slider main container -->
       </section>
       <section id="follow">
@@ -376,46 +393,46 @@
 
 <script>
   //futhis is the button
-var acc = document.getElementsByClassName("course-accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  //when one of the buttons are clicked run this function
-  acc[i].onclick = function () {
-    //variables
-    var panel = this.nextElementSibling;
-    var coursePanel = document.getElementsByClassName("course-panel");
-    var courseAccordion = document.getElementsByClassName("course-accordion");
-    var courseAccordionActive = document.getElementsByClassName(
-      "course-accordion active"
-    );
-
-    /*if pannel is already open - minimize*/
-    if (panel.style.maxHeight) {
-      //minifies current pannel if already open
-      panel.style.maxHeight = null;
-      //removes the 'active' class as toggle didnt work on browsers minus chrome
-      this.classList.remove("active");
-    } else {
-      //pannel isnt open...
-      //goes through the buttons and removes the 'active' css (+ and -)
-      for (var ii = 0; ii < courseAccordionActive.length; ii++) {
-        courseAccordionActive[ii].classList.remove("active");
-      }
-      //Goes through and removes 'activ' from the css, also minifies any 'panels' that might be open
-      for (var iii = 0; iii < coursePanel.length; iii++) {
+  var acc = document.getElementsByClassName("course-accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    //when one of the buttons are clicked run this function
+    acc[i].onclick = function() {
+      //variables
+      var panel = this.nextElementSibling;
+      var coursePanel = document.getElementsByClassName("course-panel");
+      var courseAccordion = document.getElementsByClassName("course-accordion");
+      var courseAccordionActive = document.getElementsByClassName(
+        "course-accordion active"
+      );
+      
+      /*if pannel is already open - minimize*/
+      if (panel.style.maxHeight) {
+        //minifies current pannel if already open
+        panel.style.maxHeight = null;
+        //removes the 'active' class as toggle didnt work on browsers minus chrome
         this.classList.remove("active");
-        coursePanel[iii].style.maxHeight = null;
+      } else {
+        //pannel isnt open...
+        //goes through the buttons and removes the 'active' css (+ and -)
+        for (var ii = 0; ii < courseAccordionActive.length; ii++) {
+          courseAccordionActive[ii].classList.remove("active");
+        }
+        //Goes through and removes 'activ' from the css, also minifies any 'panels' that might be open
+        for (var iii = 0; iii < coursePanel.length; iii++) {
+          this.classList.remove("active");
+          coursePanel[iii].style.maxHeight = null;
+        }
+        //opens the specified pannel
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        //adds the 'active' addition to the css.
+        this.classList.add("active");
       }
-      //opens the specified pannel
-      panel.style.maxHeight = panel.scrollHeight + "px";
-      //adds the 'active' addition to the css.
-      this.classList.add("active");
-    }
-  }; //closing to the acc onclick function
-} //closing to the for loop.
-
-function toggleText(header) {
+    }; //closing to the acc onclick function
+  } //closing to the for loop.
+  
+  function toggleText(header) {
     const arrow = header.querySelector(".arrow");
     const content = header.nextElementSibling;
     content.style.display = content.style.display === "block" ? "none" : "block";
