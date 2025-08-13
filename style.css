@@ -28,7 +28,9 @@
   font-family: figtree;
   line-height: 1.3;
 }
-
+a{
+  text-decoration: none;
+}
 /*.whatsapp {
   position: fixed;
   botom: 100px;
