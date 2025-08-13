@@ -10,9 +10,12 @@
 }
 
 .herobg .hero h2 {
-  margin: 0;
-  font-size: 35px;
   color: #fff;
+  font-size: 35px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: 700;
 }
 
 .herobg .hero p {

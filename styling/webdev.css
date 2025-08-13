@@ -141,7 +141,7 @@ section#offers ul{
 section#offers ul li{
   border: 1.5px solid var(--moss-green);
   border-top: 0;
-    background: rgba(225, 255, 183, .7);
+    background: rgba(225, 255, 183, 0.7);
   border-radius: 0px;
   padding: 15px 10px;
   text-align: center;

@@ -42,7 +42,17 @@
 .whatsapp img {
   width: 100px;
 }
+.fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease;
+    }
 
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+   
 html,
 body {
   width: 100%;
@@ -189,17 +199,20 @@ nav a:hover {
 
 .hero h2 {
   font-size: 2rem;
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
   font-weight: 500;
 }
 
 .hero p {
   margin-top: 1rem;
-  animation: fadeIn 3s ease-in-out;
+  animation: fadeIn 1.5s ease-in-out;
   line-height: 20px;
   
 }
-
+@keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
 .hero button {
   display: flex;
   background: var(--moss-green);
@@ -212,7 +225,7 @@ nav a:hover {
   margin-top: 1rem;
   font-size: 15px;
   line-height: 20px;
-  animation: fadeIn 4s ease-in-out;
+  animation: fadeIn 2s ease-in-out;
   
 }
 
@@ -841,6 +854,53 @@ footer form button {
   background: #767676;
 }
 
+
+button.course-accordion {
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  padding: 8px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  transition: 0.4s;
+}
+
+/*When the button is active or mouse hovers*/
+button.course-accordion.active,
+button.course-accordion:hover {
+    background: rgba(225, 255, 183, 0.7);
+
+}
+
+/*button not active*/
+button.course-accordion {
+  
+}
+button.course-accordion.active  {
+  margin-bottom: 10px;
+}
+
+/* minus button */
+button.course-accordion.active .arrow {
+  transform: rotate(180deg);
+}
+
+div.course-panel {
+  padding: 0 18px;
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 96%;
+  font-size: 18px;
+  line-height: 1.6em;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.88);
+}
 .toggle-container {
   max-width: 100%;
   margin: 0px 10px;
@@ -849,6 +909,17 @@ footer form button {
   
 }
 
+.course-accordion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 500;
+}
 .toggle-header {
   display: flex;
   justify-content: center;
@@ -860,7 +931,6 @@ footer form button {
   font-size: 23px;
   font-weight: 500;
 }
-
 .toggle-header:hover {}
 
 @media (min-width: 768px) {
@@ -869,25 +939,25 @@ footer form button {
   }
 }
 
-.arrow {
+.course-accordion .arrow {
   transition: transform 0.3s;
-  transform: rotate(90deg);
-  padding: 15px q;
+  line-height: 0;
 }
 
 .arrow.rotate {
   transform: rotate(270deg);
 }
 
-.toggle-content {
-  display: none;
+.course-panel {
   padding: 10px 15px;
   border-top: none;
   text-align: center;
   font-size: 18px;
   font-weight: 500;
 }
-
+.toggle-content{
+  display: none;
+}
 #follow {
   background: var(--lightgrey);
   color: var(--dark-grey);
