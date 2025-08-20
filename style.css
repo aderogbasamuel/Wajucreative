@@ -380,6 +380,7 @@ nav a:hover {
     display: flex;
     padding: 5rem;
     gap: 2rem;
+    align-items: flex-start;
   }
   
   #about .text {
@@ -413,7 +414,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  
 }
 
 #whyus h2,
@@ -437,42 +438,19 @@ nav a:hover {
   font-size: 13px;
 }
 
-@keyframes moveright {
-  from {
-    transform: translateX(-200px);
-  }
-  
-  to {
-    transform: translateX(0px);
-    
-  }
-}
-
-@keyframes moveleft {
-  from {
-    transform: translateX(200px);
-  }
-  
-  to {
-    transform: translateX(0px);
-    
-  }
-}
-
 .list {
   clip-path: inset(0 0 0 0);
   /* Same effect as overflow: hidden but may work better with animations */
-  
   text-align: center;
   border: 0px solid red;
   width: 300px;
-  position: relative;
   list-style: none;
   margin-top: 10px;
-  
+  position: relative;
 }
 
 #whyus .list li {
+  
   padding: 10px 20px;
   border-radius: 100px;
   text-align: center;
@@ -484,6 +462,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 #whyus .list li:nth-child(even) {
@@ -506,6 +485,30 @@ nav a:hover {
   animation-range: entry 0 cover 40%;
   font-weight: 500;
   transition: 0.3s;
+}
+
+@keyframes moveright {
+  from {
+    transform: translateX(-200px);
+  }
+  
+  to {
+    transform: translateX(0px);
+    
+  }
+}
+
+@keyframes moveleft {
+  from {
+  /*  transform: translateX(200px);
+  */
+  transform: translateX(0px);
+  }
+  
+  to {
+    transform: translateX(0px);
+
+  }
 }
 
 @media (min-width: 768px) {
