@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Content Strategy & Creation|Waju Creative</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-
+  
+  
   <link rel="stylesheet" href="style.css" type="text/css" media="all" />
   <link rel="stylesheet" href="styling/contents.css" type="text/css" media="all" />
   
@@ -19,35 +19,35 @@
   </a>
   
   <div id="bg">
-          <header>
-        <img src="images/logo.png" alt="logo" height="50px" />
-        <div class="menu-btn" onclick="toggleMenu()">☰</div>
-        <nav id="desktop-nav">
-          <span onclick="closeNav()" class="closebtn">x</span>
-          
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <div class="toggle-container" style="color: #fff;border: 0;text-align: left;margin: 0;">
-            <div class="toggle-header" onclick="toggleText(this)" style="text-align: left;justify-content:start ;padding: 0;gap: 8px;font-size: 18px;">
-              <span>OUR SERVICES </span>
-              <span class="arrow"> ></span>
-            </div>
-            <div class="toggle-content" style="text-align: left;padding: 0px;padding-top: 15px;font-size: 15px;transform: translateX(-5px);">
-              <br />
-              <a href="contentstrategy&creation.html" style="font-size: 15px;">Contents Creation</a>
-              <br /><br />
-              <br />
-              <a href="web development.html" style="font-size: 15px;">Web Design</a>
-              <br /><br /><br />
-              <a href="Full-ServiceMarketing&Growth.html" style="font-size: 15px;">Full Service Marketing</a>
-              <br />
-            </div>
+    <header>
+      <img src="images/logo.png" alt="logo" height="50px" />
+      <div class="menu-btn" onclick="toggleMenu()">☰</div>
+      <nav id="desktop-nav">
+        <span onclick="closeNav()" class="closebtn">x</span>
+        
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <div class="toggle-container">
+          <div class="toggle-header" onclick="toggleText(this)">
+            <span>OUR SERVICES </span>
+            <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down">
+                <path d="m6 9 6 6 6-6" />
+              </svg></span>
+            
           </div>
-          <a href="contact.html">Contact</a>
-          <a href="whoiworkwith.html">Who I Work With</a>
-        </nav>
-      </header>
-
+          <div class="toggle-content">
+            
+            <a href="contentstrategy&creation.html" style="font-size: 15px;">Contents Creation</a>
+            <a href="web development.html" style="font-size: 15px;">Web Design</a>
+            <a href="Full-ServiceMarketing&Growth.html" style="font-size: 15px;">Full Service Marketing</a>
+          </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="whoiworkwith.html">Who I Work With</a>
+      </nav>
+    </header>
+    
+    
     
     <nav id="mobile-nav" class="mobile" style="display: none;">
     </nav>
@@ -69,6 +69,7 @@
         I help service-based brands create content that actually reflects who they are, speaks to the
         right people, and builds credibility online — without the stress.</p>
       <a href="contact.html">Inquire</a>
+      <!-- <img src="/images/-E2-80-94Pngtree-E2-80-94stereoscopic-20social-20media-20likes-20to_5444927.png" alt="interactions" width="100%"/>-->
     </section>
     <section id="reason">
       <h2>What This Service Does for You
@@ -106,9 +107,37 @@
         You get a consistent, cohesive presence that makes your brand easier to trust and harder to ignore
       </p>
     </section>
+    
     <section id="steps">
       <h2>How It <span style="color: var(--moss-green);"> Works</span></h2>
-      <div class="cards">
+      <div class="steps">
+        <div class="step-connector"></div>
+        <div class="step animate">
+          <div class="step-number">1</div>
+          <h3>Discovery</h3>
+          <p> We’ll go over your brand, offer, and goals — and map out the kind of content that will
+            actually move your business forward..</p>
+        </div>
+        <div class="step animate delay-1">
+          <div class="step-number">2</div>
+          <h3>Content Plan</h3>
+          <p>You’ll get a visual roadmap and a clear direction for what to post and when.</p>
+        </div>
+        <div class="step animate delay-2">
+          <div class="step-number">3</div>
+          <h3>Design & Delivery</h3>
+          <p>You’ll create your content and send it ready to use — no Canva stress, no confusion.</p>
+        </div>
+        <div class="step animate delay-3">
+          <div class="step-number">4</div>
+          <h3>Optional Ongoing Support</h3>
+          <p>Need fresh content every month? You can stay on as a retainer client with discounted
+            monthly packages.</p>
+        </div>
+      </div>
+  </div>
+  
+  <!--<div class="cards">
         <div class="card">
           <div class="head">
             <div class="no">
@@ -123,6 +152,7 @@
             actually move your business forward.
           </div>
         </div>
+        
         <div class="card">
           <div class="head">
             <div class="no">
@@ -167,40 +197,40 @@
           </div>
         </div>
         
-      </div>
-    </section>
-    <section id="cta3">
-      <div class="overlay">
-        <h2>Ready to stop guessing and start growing?</h2>
-        <p>If you’re tired of looking inconsistent online, or you’re always postponing because “nothing is
-          ready,” this is the easiest way to fix it — and free yourself up to focus on your actual service.
-          Let’s create content that does what it’s supposed to do:
-          show up, speak clearly, and help you grow.
-        </p>
-        <a href="contact.html">BOOK A DISCOVERY CALL</a>
-      </div>
-      
-    </section>
+      </div>-->
+  </section>
+  <section id="cta3">
+    <div class="overlay">
+      <h2>Ready to stop guessing and start growing?</h2>
+      <p>If you’re tired of looking inconsistent online, or you’re always postponing because “nothing is
+        ready,” this is the easiest way to fix it — and free yourself up to focus on your actual service.
+        Let’s create content that does what it’s supposed to do:
+        show up, speak clearly, and help you grow.
+      </p>
+      <a href="contact.html">BOOK A DISCOVERY CALL</a>
+    </div>
     
-    <footer>
-      <h2>Join The Email List, Stay Elevated.</h2>
-      <p>Every month, you’ll get actionable tips to grow your brand — plus an inside look at client projects, creative process moments, and what we’re building behind the scenes at Truly Elevated. It’s strategy, storytelling, and inspo — straight to your inbox.</p>
-      <form action="" method="get" accept-charset="utf-8">
-        <label for="Email">Email*</label>
-        <input type="email" name="" id="" value="" />
-        <button type="submit">Submit</button>
-      </form>
-      <div class="quicklinks">
-        <a href="ff">FAQS</a>
-        <a href="#">Privacy Policy</a>
-        <div class="">
-          Enail: <a href="#" style="display: inline-block;">hello@wajucreative
-            com</a>
-        </div>
+  </section>
+  
+  <footer>
+    <h2>Join The Email List, Stay Elevated.</h2>
+    <p>Every month, you’ll get actionable tips to grow your brand — plus an inside look at client projects, creative process moments, and what we’re building behind the scenes at Truly Elevated. It’s strategy, storytelling, and inspo — straight to your inbox.</p>
+    <form action="" method="get" accept-charset="utf-8">
+      <label for="Email">Email*</label>
+      <input type="email" name="" id="" value="" />
+      <button type="submit">Submit</button>
+    </form>
+    <div class="quicklinks">
+      <a href="ff">FAQS</a>
+      <a href="#">Privacy Policy</a>
+      <div class="">
+        Enail: <a href="#" style="display: inline-block;">hello@wajucreative
+          com</a>
       </div>
-      <p style="padding: 30px 0px;">© 2025 by Waju Creative Inc.</p>
-    </footer>
-    
+    </div>
+    <p style="padding: 30px 0px;">© 2025 by Waju Creative Inc.</p>
+  </footer>
+  
   </div>
   </div>
 </body>
@@ -209,7 +239,7 @@
   function toggleText(header) {
     const arrow = header.querySelector(".arrow");
     const content = header.nextElementSibling;
-    content.style.display = content.style.display === "block" ? "none" : "block";
+    content.style.display = content.style.display === "flex" ? "none" : "flex";
     arrow.classList.toggle("rotate");
   }
 </script>

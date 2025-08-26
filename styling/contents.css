@@ -1,3 +1,6 @@
+*{
+  border: 0px solid red;
+}
 .herobg {
   background-image: url("/images/Artboard 4.png");
   background-position: center;
@@ -130,7 +133,7 @@ section#builtfor {
   padding: 50px 0px;
   background: var(--moss-green);
   color: #fff;
-  font-size: 20px;
+  font-size: 20px;;
   text-align: center;
 }
 
@@ -145,24 +148,90 @@ section#builtfor h2 {
 section#builtfor p {
   padding: 0px 20px;
   font-size: 18px;
-  line-height: 20px;
-  font-weight: 500;
+  font-weight: 400;
   
 }
-
+ 
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            max-width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .step {
+            text-align: center;
+            flex: 1;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--rust-brown) 0%, var(--rust-brown) 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 auto 25px;
+            box-shadow: 0 5px 15px rgba(88, 51, 26, 0.3);
+            line-height: 0;
+        }
+        
+        .step h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .step p {
+            color: var(--dark-grey);
+        }
+        
+        .step-connector {
+            position: absolute;
+            top: 30px;
+            left: 10%;
+            right: 10%;
+            height: 2px;
+            background: var(--gray-border);
+            z-index: 1;
+        }
+        
+        body .step-connector {
+            background: #858585;
+        }
+            @media (max-width: 968px) {
+            .steps {
+                flex-direction: column;
+                gap: 50px;
+            }
+            
+            .step-connector {
+                display: none;
+            }
+        }
+        
 section#steps {
-  background: var(--light-grey);
-  padding: 30px 0px;
+  padding: 80px 20px !important;
+  margin: 0;
 }
 
 section#steps h2 {
   padding: 0px 10px;
   font-size: 30px;
   font-weight: 400;
-  margin: 5px 0px;
+  margin: 15px 0px;
   text-align: center;
+  margin-bottom: 30px;
 }
-
+/*
 section#steps .cards {
   padding: 20px;
   display: grid;
@@ -206,7 +275,7 @@ section#steps .cards .card .card-content {
   color: var(--moss-green);
   line-height: 25px;
 }
-
+*/
 #cta3 {
   margin-top: 0;
   background-image: url("/images/marvin-meyer-SYTO3xs06fU-unsplash.jpg");

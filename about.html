@@ -21,34 +21,34 @@
   
   <div class="body">
     
-    <header>
-      <img src="images/logo.png" alt="logo" height="50px" />
-      <div class="menu-btn" onclick="toggleMenu()">☰</div>
-      <nav id="desktop-nav">
-        <span onclick="closeNav()" class="closebtn">x</span>
-        
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <div class="toggle-container" style="color: #fff;border: 0;text-align: left;margin: 0;">
-          <div class="toggle-header" onclick="toggleText(this)" style="text-align: left;justify-content:start ;padding: 0;gap: 8px;font-size: 18px;">
-            <span>OUR SERVICES </span>
-            <span class="arrow"> ></span>
+          <header>
+        <img src="images/logo.png" alt="logo" height="50px" />
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        <nav id="desktop-nav">
+          <span onclick="closeNav()" class="closebtn">x</span>
+          
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <div class="toggle-container">
+            <div class="toggle-header" onclick="toggleText(this)">
+              <span>OUR SERVICES </span>
+                        <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down">
+              <path d="m6 9 6 6 6-6" />
+            </svg></span>
+
+            </div>
+            <div class="toggle-content">
+              
+              <a href="contentstrategy&creation.html" style="font-size: 15px;">Contents Creation</a>
+              <a href="web development.html" style="font-size: 15px;">Web Design</a>
+              <a href="Full-ServiceMarketing&Growth.html" style="font-size: 15px;">Full Service Marketing</a>
+            </div>
           </div>
-          <div class="toggle-content" style="text-align: left;padding: 0px;padding-top: 15px;font-size: 15px;transform: translateX(-5px);">
-            <br />
-            <a href="contentstrategy&creation.html" style="font-size: 15px;">Contents Creation</a>
-            <br /><br />
-            <br />
-            <a href="web development.html" style="font-size: 15px;">Web Design</a>
-            <br /><br /><br />
-            <a href="Full-ServiceMarketing&Growth.html" style="font-size: 15px;">Full Service Marketing</a>
-            <br />
-          </div>
-        </div>
-        <a href="contact.html">Contact</a>
-        <a href="whoiworkwith.html">Who I Work With</a>
-      </nav>
-    </header>
+          <a href="contact.html">Contact</a>
+          <a href="whoiworkwith.html">Who I Work With</a>
+        </nav>
+      </header>
+
     
     
     <nav id="mobile-nav" class="mobile" style="display: none;">
@@ -227,7 +227,7 @@
   function toggleText(header) {
     const arrow = header.querySelector(".arrow");
     const content = header.nextElementSibling;
-    content.style.display = content.style.display === "block" ? "none" : "block";
+    content.style.display = content.style.display === "flex" ? "none" : "flex";
     arrow.classList.toggle("rotate");
   }
 </script>

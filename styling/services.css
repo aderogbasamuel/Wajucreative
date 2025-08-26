@@ -146,6 +146,8 @@ section {
 }
 .service-header img{
   width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 .service-header .overlay{
   background: #236B326E;
