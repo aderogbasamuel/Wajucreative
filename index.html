@@ -1,447 +1,652 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Welcome to waju creative" />
+    <meta name="author" content="Waju Creative" />
+    <meta name="robots" content="index, follow" />
+    <!-- Open Graph meta for social and richer previews -->
+    <meta property="og:title" content="WWaju Creative Agency" />
+    <meta
+      property="og:description"
+      content="Waju creative is a full-service marketing agency that helps service-based brands elevate their presence through bold branding, strategic content, and powerful visuals."
+    />
+    <meta
+      property="og:image"
+      content="https://your-domain.com/file_0000000021e86243a2df67a99f852c4b.png"
+    />
+    <meta property="og:url" content="https://wajucreative.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Waju Creative- Home</title>
+    <link rel="icon" href="default.png" type="image/png" />
+    <link rel="canonical" href="https://wajucreative.com" />
+    <title>Waju Creative</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Welcome to waju creative" />
-  <meta name="author" content="Waju Creative">
-  <meta name="robots" content="index, follow">
-  <!-- Open Graph meta for social and richer previews -->
-  <meta property="og:title" content="WWaju Creative Agency">
-  <meta property="og:description" content="Waju creative is a full-service marketing agency that helps service-based brands elevate their presence through bold branding, strategic content, and powerful visuals.">
-  <meta property="og:image" content="https://your-domain.com/file_0000000021e86243a2df67a99f852c4b.png">
-  <meta property="og:url" content="https://wajucreative.com">
-  <meta name="twitter:card" content="summary_large_image">
-  <title>Waju Creative- Home</title>
-  <link rel="icon" href="default.png" type="image/png">
-  <link rel="canonical" href="https://wajucreative.com" />
-  <title>Waju Creative</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="features.css" />
-  
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="features.css" />
+  </head>
 
-<body>
-  <a href="https://wa.me/+2348139509235" class="whatsapp" style="position: fixed; bottom: 20px; right: 20px; z-index: 100; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
-    <i class="fab fa-whatsapp" style="color: white; font-size: 30px;"></i>
-  </a>
-  
-  <div class="bg"></div>
-  <div class="body">
-    <div class="lightbg">
-      <header>
-        <img src="images/logo.png" alt="logo" height="50px" />
-        <div class="menu-btn" onclick="toggleMenu()">☰</div>
-        <nav id="desktop-nav">
-          <span onclick="closeNav()" class="closebtn">x</span>
-          
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
+  <body>
+    <a
+      href="https://wa.me/+2348139509235"
+      class="whatsapp"
+      style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 100;
+        width: 60px;
+        height: 60px;
+        background: #25d366;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      "
+    >
+      <i class="fab fa-whatsapp" style="color: white; font-size: 30px"></i>
+    </a>
+
+    <div class="bg"></div>
+    <div class="body">
+      <div class="lightbg">
+        <header>
+          <img src="images/logo.png" alt="logo" height="50px" />
+          <div class="menu-btn" onclick="toggleMenu()">☰</div>
+          <nav id="desktop-nav">
+            <span onclick="closeNav()" class="closebtn">x</span>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <div class="toggle-container">
+              <div class="toggle-header" onclick="toggleText(this)">
+                <span>OUR SERVICES </span>
+                <span class="arrow"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down-icon lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6" /></svg></span>
+              </div>
+              <div class="toggle-content">
+                <a href="contentstrategy&creation.html" style="font-size: 15px"
+                  >Contents Creation</a
+                >
+                <a href="web development.html" style="font-size: 15px"
+                  >Web Design</a
+                >
+                <a
+                  href="Full-ServiceMarketing&Growth.html"
+                  style="font-size: 15px"
+                  >Full Service Marketing</a
+                >
+              </div>
+            </div>
+            <a href="contact.html">Contact</a>
+            <a href="whoiworkwith.html">Who I Work With</a>
+          </nav>
+        </header>
+        <nav id="mobile-nav" class="mobile" style="display: none"></nav>
+        <div class="hero">
+          <h2 id="">You Built the Dream. I Will Make It Look Iconic.</h2>
+          <p>
+            At Waju Creative, I elevate service-based brands through bold
+            branding, powerful visuals, and strategic content that makes your
+            audience say, <i>“I need that.”</i>
+            <br />
+            <b>This is your elevation season — let’s make it unforgettable.</b>
+          </p>
+          <button>View Services</button>
+        </div>
+        <section id="cta">
+          <div class="text">
+            <h2 class="fade-in">Free Guide: Before You Launch That Brand</h2>
+            <p class="fade-in">
+              Starting your business? Let’s make sure your brand is built on
+              purpose — not guesswork. Get this free guide to clarify your
+              values, vision, and what makes your brand stand out. Drop your
+              email to get it sent straight to your inbox.
+            </p>
+          </div>
+
+          <form action="" class="fade-in">
+            <label for="name"
+              >Full Name *
+              <input type="text" name="name" id="name" value="" />
+            </label>
+            <label for="email"
+              >Email*
+
+              <input type="text" name="name" id="name" value="" />
+            </label>
+            <button type="submit">Submit</button>
+          </form>
+          <div class="img fade-in"></div>
+        </section>
+        <section id="about">
+          <div class="text">
+            <p class="heading fade-in">You bring the vision.</p>
+            <h2 class="fade-in">
+              <span> I bring </span>the strategy, creative direction, and
+              execution to make it real.
+            </h2>
+            <p class="subtext fade-in">
+              At Waju Creative, I help service-based brands turn ideas into
+              identities that feel authentic, look premium, and grow with
+              purpose. It’s not just about creating content — it’s about
+              building a brand that stands out, connects, and converts.
+            </p>
+            <a href="about.html" class="fade-in">ABOUT THE FOUNDER</a>
+          </div>
+
+          <img
+            src="/images/AmandaShearPhoto-Cre8tively-013.jpg"
+            alt="Founder Image"
+            width="100%"
+            class="fade-in"
+          />
+        </section>
+        <section id="whyus">
+          <h2 class="fade-in">
+            <span>You’ve got the vision.</span> The passion. The business.
+          </h2>
+          <p class="subtext fade-in">
+            But every time you sit down to actually build the brand — the
+            website, the content, the visual identity — it feels overwhelming.
+            You ask yourself:
+          </p>
+          <div class="list">
+            <div class="row">
+              <li>Where do I even start?</li>
+              <li>How do I even create content that connects and converts?</li>
+            </div>
+            <div class="row">
+              <li>How do I make my brand look as good as my vision feels?</li>
+              <li>
+                How do I create consistency when I feel like my brand is all
+                over the place?
+              </li>
+            </div>
+            <div class="row">
+              <li>
+                How do you turn my ideas into a clear and cohesive visual story?
+              </li>
+              <li>What colors or fonts represent my business?</li>
+            </div>
+
+            <p style="font-size: 20px; margin-top: 20px">
+              That's where Waju creative comes in.
+            </p>
+          </div>
+        </section>
+        <section id="works">
+          <h2 class="fade-in">
+            You Don’t Have to Do It Alone — Here’s How We Can Work
+            <span>Together</span>
+          </h2>
+          <div class="cards">
+            <div class="card fade-in">
+              <img
+                src="/images/Copywriting-cwebinar-2.jpg"
+                alt="content strategy & creation"
+              />
+              <div class="content">
+                <h2>Content Strategy & Creation</h2>
+                <p>
+                  Imagine having content that not only looks good — but
+                  communicates clearly, attracts the right audience, and
+                  reflects your true value. No more guesswork or inconsistent
+                  designs. We develop strategic, branded content — from flyers
+                  to carousels to campaign visuals — that tells your story,
+                  positions your offer, and helps you show up like the brand you
+                  are. Every post becomes a move with purpose
+                </p>
+                <a href="contentstrategy&creation.html">Unlock The Details</a>
+              </div>
+            </div>
+            <div class="card fade-in">
+              <img
+                src="/images/christopher-gower-m_HRfLhgABo-unsplash.jpg"
+                alt="web design& development"
+              />
+              <div class="content">
+                <h2>Web Design & Development</h2>
+                <p>
+                  Imagine a website that works as hard as you do — one that
+                  feels clean, modern, and easy to use. No more clunky pages or
+                  sites that don’t convert. We design functional, mobile-first
+                  websites that showcase your services, speak to your audience,
+                  and help you get booked, contacted, or taken seriously online.
+                  Because service brands need more than just a presence — they
+                  need performance
+                </p>
+                <a href="web development.html">Explore This Service</a>
+              </div>
+            </div>
+            <div class="card fade-in">
+              <img
+                src="/images/IMG-20240815-WA0201.jpg"
+                alt="Full-ServiceMarketing&Growth"
+              />
+              <div class="content">
+                <h2>Full-Service Marketing & Growth</h2>
+                <p>
+                  Imagine a website that works as hard as you do — one that
+                  feels clean, modern, and easy to use. No more clunky pages or
+                  sites that don’t convert. We design functional, mobile-first
+                  websites that showcase your services, speak to your audience,
+                  and help you get booked, contacted, or taken seriously online.
+                  Because service brands need more than just a presence — they
+                  need performance
+                </p>
+                <a href="Full-ServiceMarketing&Growth.html"
+                  >Explore This Service</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="features">
+          <h2 class="fade-in">
+            OUR WORK AND AMAZING CLIENTS HAVE BEEN FEATURED ON
+          </h2>
+          <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <img
+                  src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="portfolio">
+          <p class="fade-in">EXPLORE OUR CREATIVE PORTFOLIO</p>
+          <h2 class="fade-in">
+            Take a look at some of the brands I’ve had the honor to help
+            elevate.
+          </h2>
+          <a href="about.html">Explore Portfolio</a>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class=""
+                  src="/images/marvin-meyer-SYTO3xs06fU-unsplash.jpg"
+                  alt=""
+                  width="100%"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class=""
+                  src="/images/IMG-20240815-WA0201.jpg"
+                  alt=""
+                  width="100%"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class=""
+                  src="/images//images/Copywriting-cwebinar-2.jpg"
+                  alt=""
+                  width="100%"
+                />
+              </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </section>
+        <section id="testimonials">
+          <h2 class="fade-in">What My Clients Have in Common</h2>
+          <div class="text fade-in">
+            <div class="client_testimonial">
+              You're not starting from scratch — you're scaling.
+              <br />
+              You're not trying to go viral — you're trying to stay consistent
+              and credible.
+              <br />
+              You're not experimenting — you're building something real.
+              <br />
+              You care about how your brand is perceived, and you know that in a
+              visual-first world, what
+              <br />
+              you show matters just as much as what you offer.
+              <br />
+              I don’t create for everyone. I create for those who understand the
+              power of perception, positioning, and strategy.
+            </div>
+          </div>
+        </section>
+        <section id="how-we-work">
+          <h2>
+            A Quick Look at
+            <span>How We Work Together</span>
+          </h2>
+
           <div class="toggle-container">
-            <div class="toggle-header" onclick="toggleText(this)">
-              <span>OUR SERVICES </span>
-                        <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down">
-              <path d="m6 9 6 6 6-6" />
-            </svg></span>
-
-            </div>
-            <div class="toggle-content">
-              
-              <a href="contentstrategy&creation.html" style="font-size: 15px;">Contents Creation</a>
-              <a href="web development.html" style="font-size: 15px;">Web Design</a>
-              <a href="Full-ServiceMarketing&Growth.html" style="font-size: 15px;">Full Service Marketing</a>
+            <button class="course-accordion">
+              <span>Discovery Call — Let’s Talk.</span>
+              <span class="arrow"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-down-icon lucide-chevron-down"
+                >
+                  <path d="m6 9 6 6 6-6" /></svg
+              ></span>
+            </button>
+            <div class="course-panel">
+              <p>
+                We start with a free 20-minute call to dive into your business,
+                your vision, and where you’re feeling stuck. This is where I
+                learn your goals and start mapping out the best direction for
+                your brand.
+              </p>
             </div>
           </div>
-          <a href="contact.html">Contact</a>
-          <a href="whoiworkwith.html">Who I Work With</a>
-        </nav>
-      </header>
-      <nav id="mobile-nav" class="mobile" style="display: none;">
-      </nav>
-      <div class="hero">
-        <h2 id="">You Built the Dream. I Will Make It Look Iconic.
-          
-        </h2>
-        <p>At Waju Creative, I elevate service-based brands through bold branding, powerful visuals, and
-          strategic content that makes your audience say, <i>“I need that.”</i>
+          <div class="toggle-container">
+            <button class="course-accordion">
+              <span>Proposal — Your Custom Plan.</span>
+              <span class="arrow"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-down-icon lucide-chevron-down"
+                >
+                  <path d="m6 9 6 6 6-6" /></svg
+              ></span>
+            </button>
+            <div class="course-panel">
+              <p>
+                We start with a free 20-minute call to dive into your business,
+                your vision, and where you’re feeling stuck. This is where I
+                learn your goals and start mapping out the best direction for
+                your brand.
+              </p>
+            </div>
+          </div>
+
+          <div class="toggle-container">
+            <button class="course-accordion">
+              <span>Agreement & Invoice — We Make It Official.</span>
+              <span class="arrow"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-down-icon lucide-chevron-down"
+                >
+                  <path d="m6 9 6 6 6-6" /></svg
+              ></span>
+            </button>
+            <div class="course-panel">
+              <p>
+                We start with a free 20-minute call to dive into your business,
+                your vision, and where you’re feeling stuck. This is where I
+                learn your goals and start mapping out the best direction for
+                your brand.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="discovery">
+          <h2 class="fade-in">You’re Not Meant to Do It All.</h2>
           <br />
-          <b>This is your elevation season — let’s make it unforgettable.</b>
-        </p>
-        <button>Book Your Free Brand Strategy Session
-        </button>
-        
+          <p class="fade-in">
+            Running a service-based business already comes with enough pressure.
+            <br /><br />
+            Trying to design your content, plan visuals, shoot videos, manage
+            your site, and stay consistent online? That’s not sustainable.
+            <br /><br />
+            You don’t have to keep figuring it out on your own.
+            <br />
+            You don’t have to keep postponing your launch.
+            <br />
+            You don’t have to stay invisible just because content creation isn’t
+            your thing.
+            <br /><br />
+            I help you take all of that off your plate — with clean, consistent
+            content, visuals, and a website that actually reflects the brand
+            you’ve been building behind the scenes.
+            <br /><br />
+            So you can focus on your service.<b> I’ll make sure you’re seen.</b>
+          </p>
+          <br />
+          <a href="contact.html">Book A Discovery Call</a>
+          <!-- Slider main container -->
+        </section>
+        <section id="follow">
+          <h3 class="fade-in">
+            FOLLOW AND CONNECT WITH US
+            <span>@WAJUCREATIVEAGENCY</span>
+          </h3>
+        </section>
+        <footer>
+          <h2 class="fade-in">Join The Email List, Stay Elevated.</h2>
+          <p class="fade-in">
+            Every month, you’ll get actionable tips to grow your brand — plus an
+            inside look at client projects, creative process moments, and what
+            we’re building behind the scenes at Truly Elevated. It’s strategy,
+            storytelling, and inspo — straight to your inbox.
+          </p>
+          <form action="" method="get" accept-charset="utf-8">
+            <label for="Email">Email*</label>
+            <input type="email" name="" id="" value="" />
+            <button type="submit">Submit</button>
+          </form>
+          <div class="quicklinks">
+            <a href="ff">FAQS</a>
+            <a href="#">Privacy Policy</a>
+            <div class="">
+              Enail:
+              <a href="#" style="display: inline-block"
+                >hello@wajucreative com</a
+              >
+            </div>
+          </div>
+          <p style="padding: 30px 0px">© 2025 by Waju Creative Inc.</p>
+        </footer>
       </div>
-      <section id="cta">
-        <div class="text">
-          <h2 class="fade-in">Free Guide: Before You Launch That Brand</h2>
-          <p class="fade-in">Starting your business? Let’s make sure your brand is built on purpose — not guesswork. Get this free guide to clarify your values, vision, and what makes your brand stand out.
-            Drop your email to get it sent straight to your inbox.
-          </p>
-        </div>
-        
-        <form action="" class="fade-in">
-          <label for="name">Full Name *
-            <input type="text" name="name" id="name" value="" />
-          </label>
-          <label for="email">Email*
-            
-            <input type="text" name="name" id="name" value="" />
-          </label>
-          <button type="submit">Submit</button>
-        </form>
-        <div class="img fade-in">
-        </div>
-        
-      </section>
-      <section id="about">
-        <div class="text">
-          
-          <p class="heading fade-in">You bring the vision.</p>
-          <h2 class="fade-in"><span> I bring </span>the strategy, creative direction, and execution to make it real.</h2>
-          <p class="subtext fade-in">At Waju Creative, I help service-based brands turn ideas into identities that feel authentic, look
-            premium, and grow with purpose.
-            It’s not just about creating content — it’s about building a brand that stands out, connects, and
-            converts.
-          </p>
-          <a href="about.html" class="fade-in">ABOUT THE FOUNDER</a>
-        </div>
-        
-        <img src="/images/AmandaShearPhoto-Cre8tively-013.jpg" alt="Founder Image" width="100%" class="fade-in" />
-      </section>
-      <section id="whyus">
-        <h2 class="fade-in"><span>You’ve got the vision.</span>
-          The passion. The business.</h2>
-        <p class="subtext fade-in">But every time you sit down to actually build the brand — the website, the content, the visual identity — it feels overwhelming. You ask yourself:</p>
-        <div class="list ">
-          <div class="row">
-            
-            <li>Where do I even start?</li>
-            <li>How do I even create content that connects and converts?</li>
-          </div>
-          <div class="row">
-            
-            <li>How do I make my brand look as good as my vision feels?</li>
-            <li>
-              How do I create consistency when I feel
-              like my brand is all over the place?</li>
-          </div>
-          <div class="row">
-            
-            <li>How do you turn my ideas into a clear and cohesive visual story?</li>
-            <li>What colors or fonts represent my business?</li>
-          </div>
-          
-          <p style="font-size: 20px;margin-top: 20px;">That's where Waju creative comes in.</p>
-        </div>
-      </section>
-      <section id="works">
-        <h2 class="fade-in">You Don’t Have to Do It Alone — Here’s How We Can Work <span>Together</span></h2>
-        <div class="cards">
-          
-          <div class="card fade-in">
-            <img src="/images/Copywriting-cwebinar-2.jpg" alt="content strategy & creation" />
-            <div class="content">
-              
-              <h2>Content Strategy & Creation</h2>
-              <p>Imagine having content that not only looks good — but communicates clearly, attracts the right
-                audience, and reflects your true value. No more guesswork or inconsistent designs. We develop
-                strategic, branded content — from flyers to carousels to campaign visuals — that tells your
-                story, positions your offer, and helps you show up like the brand you are. Every post becomes a
-                move with purpose</p>
-              <a href="contentstrategy&creation.html">Unlock The Details</a>
-            </div>
-            
-          </div>
-          <div class="card fade-in">
-            <img src="/images/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="web design& development" />
-            <div class="content">
-              
-              <h2>Web Design & Development</h2>
-              <p>Imagine a website that works as hard as you do — one that feels clean, modern, and easy to
-                use. No more clunky pages or sites that don’t convert. We design functional, mobile-first
-                websites that showcase your services, speak to your audience, and help you get booked,
-                contacted, or taken seriously online. Because service brands need more than just a presence —
-                they need performance</p>
-              <a href="web development.html">Explore This Service</a>
-            </div>
-          </div>
-          <div class="card fade-in">
-            <img src="/images/IMG-20240815-WA0201.jpg" alt="Full-ServiceMarketing&Growth" />
-            <div class="content">
-              
-              <h2>Full-Service Marketing & Growth</h2>
-              <p>Imagine a website that works as hard as you do — one that feels clean, modern, and easy to
-                use. No more clunky pages or sites that don’t convert. We design functional, mobile-first
-                websites that showcase your services, speak to your audience, and help you get booked,
-                contacted, or taken seriously online. Because service brands need more than just a presence —
-                they need performance</p>
-              <a href="Full-ServiceMarketing&Growth.html">Explore This Service</a>
-            </div>
-          </div>
-          
-          
-          
-        </div>
-        
-      </section>
-      <section id="features">
-        <h2 class="fade-in">OUR WORK AND AMAZING CLIENTS HAVE BEEN FEATURED ON</h2>
-        <div class="slider">
-          <div class="slide-track">
-            <div class="slide">
-              <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="">
-            </div>
-            <div class="slide">
-              <img src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png" alt="">
-            </div>
-            <div class="slide">
-              <img src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png" alt="">
-            </div>
-            <div class="slide">
-              <img src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png" alt="">
-            </div>
-            <div class="slide">
-              <img src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png" alt="">
-            </div>
-            <div class="slide">
-              <img src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png" alt="">
-            </div>
-            <div class="slide">
-              <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="">
-            </div>
-            <div class="slide">
-              <img src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png" alt="">
-            </div>
-            <div class="slide">
-              <img src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png" alt="">
-            </div>
-            <div class="slide">
-              <img src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png" alt="">
-            </div>
-            <div class="slide">
-              <img src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png" alt="">
-            </div>
-            <div class="slide">
-              <img src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png" alt="">
-            </div>
-            <div class="slide">
-              <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="">
-            </div>
-            <div class="slide">
-              <img src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png" alt="">
-            </div>
-            <div class="slide">
-              <img src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png" alt="">
-            </div>
-            <div class="slide">
-              <img src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png" alt="">
-            </div>
-            <div class="slide">
-              <img src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png" alt="">
-            </div>
-            <div class="slide">
-              <img src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png" alt="">
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="portfolio">
-        <p class="fade-in">EXPLORE OUR CREATIVE PORTFOLIO</p>
-        <h2 class="fade-in">Take a look at some of the brands I’ve had the honor to help elevate.</h2>
-        <a href="about.html">Explore Portfolio</a>
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            
-          <div class="swiper-slide">
-            <img class="" src="/images/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="" width="100%" />
-          </div>
-          <div class="swiper-slide">
-            <img class="" src="/images/IMG-20240815-WA0201.jpg" alt="" width="100%" />
-
-          </div>
-          <div class="swiper-slide">
-            <img class="" src="/images//images/Copywriting-cwebinar-2.jpg" alt="" width="100%" />
-
-          </div>
-        </div>
-
-        
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        
     </div>
-    
-    </section>
-    <section id="testimonials">
-      <h2 class="fade-in">What My Clients Have in Common
-      </h2>
-      <div class="text fade-in">
-        <div class="client_testimonial">
-          You're not starting from scratch — you're scaling.
-          <br />
-          You're not trying to go viral — you're trying to stay consistent and credible.
-          <br />
-          You're not experimenting — you're building something real.
-          <br />
-          You care about how your brand is perceived, and you know that in a visual-first world, what
-          <br />
-          you show matters just as much as what you offer.
-          <br />
-          I don’t create for everyone. I create for those who understand the power of perception,
-          positioning, and strategy.
-        </div>
-      </div>
-    </section>
-    <section id="how-we-work">
-      <h2>A Quick Look at
-        <span>How We Work Together</span>
-      </h2>
-      
-      <div class="toggle-container">
-        <button class="course-accordion">
-          <span>Discovery Call — Let’s Talk.</span>
-          <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down">
-              <path d="m6 9 6 6 6-6" />
-            </svg></span>
-        </button>
-        <div class="course-panel">
-          <p>
-            We start with a free 20-minute call to dive into your business, your vision, and where you’re feeling stuck. This is where I learn your goals and start mapping out the best direction for your brand.</p>
-        </div>
-      </div>
-      <div class="toggle-container">
-        <button class="course-accordion">
-          <span>Proposal — Your Custom Plan.</span>
-          <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down">
-              <path d="m6 9 6 6 6-6" />
-            </svg></span>
-        </button>
-        <div class="course-panel">
-          <p>
-            We start with a free 20-minute call to dive into your business, your vision, and where you’re feeling stuck. This is where I learn your goals and start mapping out the best direction for your brand.</p>
-        </div>
-      </div>
-      
-      <div class="toggle-container">
-        <button class="course-accordion">
-          <span>Agreement & Invoice — We Make It Official.</span>
-          <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down">
-              <path d="m6 9 6 6 6-6" />
-            </svg></span>
-        </button>
-        <div class="course-panel">
-          <p>
-            We start with a free 20-minute call to dive into your business, your vision, and where you’re feeling stuck. This is where I learn your goals and start mapping out the best direction for your brand.</p>
-        </div>
-      </div>
-      
-    </section>
-    <section id="discovery">
-      <h2 class="fade-in">You’re Not Meant to Do It All.</h2>
-      <br />
-      <p class="fade-in">Running a service-based business already comes with enough pressure.
-        <br /><br />
-        Trying to design your content, plan visuals, shoot videos, manage your site, and stay consistent
-        online? That’s not sustainable.
-        <br /><br />
-        You don’t have to keep figuring it out on your own.
-        <br />
-        You don’t have to keep postponing your launch.
-        <br />
-        You don’t have to stay invisible just because content creation isn’t your thing.
-        <br /><br />
-        I help you take all of that off your plate — with clean, consistent content, visuals, and a website
-        that actually reflects the brand you’ve been building behind the scenes.
-        <br /><br />
-        So you can focus on your service.<b> I’ll make sure you’re seen.</b>
-      </p>
-      <br />
-      <a href="contact.html">Book A Discovery Call</a>
-      <!-- Slider main container -->
-    </section>
-    <section id="follow">
-      <h3 class="fade-in">FOLLOW AND CONNECT WITH US
-        <span>@WAJUCREATIVEAGENCY</span>
-      </h3>
-    </section>
-    <footer>
-      <h2 class="fade-in">Join The Email List, Stay Elevated.</h2>
-      <p class="fade-in">Every month, you’ll get actionable tips to grow your brand — plus an inside look at client projects, creative process moments, and what we’re building behind the scenes at Truly Elevated. It’s strategy, storytelling, and inspo — straight to your inbox.</p>
-      <form action="" method="get" accept-charset="utf-8">
-        <label for="Email">Email*</label>
-        <input type="email" name="" id="" value="" />
-        <button type="submit">Submit</button>
-      </form>
-      <div class="quicklinks">
-        <a href="ff">FAQS</a>
-        <a href="#">Privacy Policy</a>
-        <div class="">
-          Enail: <a href="#" style="display: inline-block;">hello@wajucreative
-            com</a>
-        </div>
-      </div>
-      <p style="padding: 30px 0px;">© 2025 by Waju Creative Inc.</p>
-    </footer>
-  </div>
-  </div>
-</body>
-<script type="module" src="swiper.js"></script>
-<script src="main.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+  <script type="module" src="swiper.js"></script>
+  <script src="main.js" type="text/javascript" charset="utf-8"></script>
 
-<script>
-  //futhis is the button
-  var acc = document.getElementsByClassName("course-accordion");
-  var i;
-  
-  for (i = 0; i < acc.length; i++) {
-    //when one of the buttons are clicked run this function
-    acc[i].onclick = function() {
-      //variables
-      var panel = this.nextElementSibling;
-      var coursePanel = document.getElementsByClassName("course-panel");
-      var courseAccordion = document.getElementsByClassName("course-accordion");
-      var courseAccordionActive = document.getElementsByClassName(
-        "course-accordion active"
-      );
-      
-      /*if pannel is already open - minimize*/
-      if (panel.style.maxHeight) {
-        //minifies current pannel if already open
-        panel.style.maxHeight = null;
-        //removes the 'active' class as toggle didnt work on browsers minus chrome
-        this.classList.remove("active");
-      } else {
-        //pannel isnt open...
-        //goes through the buttons and removes the 'active' css (+ and -)
-        for (var ii = 0; ii < courseAccordionActive.length; ii++) {
-          courseAccordionActive[ii].classList.remove("active");
-        }
-        //Goes through and removes 'activ' from the css, also minifies any 'panels' that might be open
-        for (var iii = 0; iii < coursePanel.length; iii++) {
+  <script>
+    //futhis is the button
+    var acc = document.getElementsByClassName("course-accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      //when one of the buttons are clicked run this function
+      acc[i].onclick = function () {
+        //variables
+        var panel = this.nextElementSibling;
+        var coursePanel = document.getElementsByClassName("course-panel");
+        var courseAccordion =
+          document.getElementsByClassName("course-accordion");
+        var courseAccordionActive = document.getElementsByClassName(
+          "course-accordion active"
+        );
+
+        /*if pannel is already open - minimize*/
+        if (panel.style.maxHeight) {
+          //minifies current pannel if already open
+          panel.style.maxHeight = null;
+          //removes the 'active' class as toggle didnt work on browsers minus chrome
           this.classList.remove("active");
-          coursePanel[iii].style.maxHeight = null;
+        } else {
+          //pannel isnt open...
+          //goes through the buttons and removes the 'active' css (+ and -)
+          for (var ii = 0; ii < courseAccordionActive.length; ii++) {
+            courseAccordionActive[ii].classList.remove("active");
+          }
+          //Goes through and removes 'activ' from the css, also minifies any 'panels' that might be open
+          for (var iii = 0; iii < coursePanel.length; iii++) {
+            this.classList.remove("active");
+            coursePanel[iii].style.maxHeight = null;
+          }
+          //opens the specified pannel
+          panel.style.maxHeight = panel.scrollHeight + "px";
+          //adds the 'active' addition to the css.
+          this.classList.add("active");
         }
-        //opens the specified pannel
-        panel.style.maxHeight = panel.scrollHeight + "px";
-        //adds the 'active' addition to the css.
-        this.classList.add("active");
-      }
-    }; //closing to the acc onclick function
-  } //closing to the for loop.
-  
-  function toggleText(header) {
-    const arrow = header.querySelector(".arrow");
-    const content = header.nextElementSibling;
-    content.style.display = content.style.display === "flex" ? "none" : "flex";
-    arrow.classList.toggle("rotate");
-  }
-</script>
+      }; //closing to the acc onclick function
+    } //closing to the for loop.
 
+    function toggleText(header) {
+      const arrow = header.querySelector(".arrow");
+      const content = header.nextElementSibling;
+      content.style.display =
+        content.style.display === "flex" ? "none" : "flex";
+      arrow.classList.toggle("rotate");
+    }
+  </script>
 </html>

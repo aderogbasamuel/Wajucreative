@@ -1,4 +1,3 @@
-console.log('Hello World!');
 const faders = document.querySelectorAll('.fade-in');
 
   function revealOnScroll() {
