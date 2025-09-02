@@ -33,9 +33,12 @@
     />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
     <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="features.css" />
+    <link rel="stylesheet" href="main.css">
   </head>
 
   <body>
@@ -64,7 +67,7 @@
     <div class="body">
       <div class="lightbg">
         <header>
-          <img src="images/logo.png" alt="logo" height="50px" />
+          <img src="images/logo.png" alt="logo" height="50px" class="w-fit w-[50px]"/>
           <div class="menu-btn" onclick="toggleMenu()">☰</div>
           <nav id="desktop-nav">
             <span onclick="closeNav()" class="closebtn">x</span>
@@ -87,7 +90,8 @@
                     stroke-linejoin="round"
                     class="lucide lucide-chevron-down-icon lucide-chevron-down"
                   >
-                    <path d="m6 9 6 6 6-6" /></svg></span>
+                    <path d="m6 9 6 6 6-6" />
+                  </svg></span>
               </div>
               <div class="toggle-content">
                 <a href="contentstrategy&creation.html" style="font-size: 15px"
@@ -120,6 +124,7 @@
           <button>View Services</button>
         </div>
         <section id="cta">
+          <div class="container-xl">
           <div class="text">
             <h2 class="fade-in">Free Guide: Before You Launch That Brand</h2>
             <p class="fade-in">
@@ -143,6 +148,7 @@
             <button type="submit">Submit</button>
           </form>
           <div class="img fade-in"></div>
+        </div>
         </section>
         <section id="about">
           <div class="text">
@@ -161,7 +167,7 @@
           </div>
 
           <img
-            src="/images/AmandaShearPhoto-Cre8tively-013.jpg"
+            src="/images/young-business-man-standing-front-stickers-glass-wall-looking-futures-plans-his-office-place.jpg"
             alt="Founder Image"
             width="100%"
             class="fade-in"
@@ -510,8 +516,8 @@
           <div class="toggle-container">
             <button class="course-accordion">
               <span>Agreement & Invoice — We Make It Official.</span>
-              <span class="arrow"
-                ><svg
+              <span class="arrow">
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -523,8 +529,8 @@
                   stroke-linejoin="round"
                   class="lucide lucide-chevron-down-icon lucide-chevron-down"
                 >
-                  <path d="m6 9 6 6 6-6" /></svg
-              ></span>
+                  <path d="m6 9 6 6 6-6" />
+                  </svg></span>
             </button>
             <div class="course-panel">
               <p>
@@ -587,8 +593,7 @@
             <div class="">
               Enail:
               <a href="#" style="display: inline-block"
-                >hello@wajucreative com</a
-              >
+                >hello@wajucreative com</a>
             </div>
           </div>
           <p style="padding: 30px 0px">© 2025 by Waju Creative Inc.</p>

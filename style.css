@@ -76,7 +76,7 @@ body {
   width: 100vw;
   height: 120vh;
   position: fixed;
-  background-image: url(images/94f55a_faf3aa3282134f2a96e71420436316d1~mv2.jpg);
+  background-image: url(images/austin-distel-wD1LRb9OeEo-unsplash.jpg);
   background-size: cover;
   background-position: center;
   z-index: -10;
@@ -852,6 +852,10 @@ footer {
 
 footer {
   padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 footer p {
@@ -862,7 +866,10 @@ footer p {
 
 footer form {
   padding: 25px;
-  text-align: left;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer form label {
@@ -954,7 +961,7 @@ button.course-accordion:hover {
 }
 
 /*button not active*/
-button.course-accordion {}
+
 
 button.course-accordion.active {
   margin-bottom: 10px;
@@ -1012,7 +1019,7 @@ div.course-panel {
   font-weight: 500;
 }
 
-.toggle-header:hover {}
+
 
 @media (min-width: 768px) {
   #how-we-work {
