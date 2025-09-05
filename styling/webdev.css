@@ -20,7 +20,7 @@ overflow: scroll;
 }
 
 .herobg{
-  background-image: url("/images/domenico-loia-EhTcC9sYXsw-unsplash.jpg");
+  background-image: url("/images/christopher-gower-m_HRfLhgABo-unsplash.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -80,12 +80,13 @@ section#text a {
   text-transform: uppercase;
 }
 #bg .img {
-  background-image: url(/images/newipadagain.png);
-  height: 350px;
-  width: 100%;
+  background-image: url(/images/mockuper.png);
+  height: 300px;
+  width: 300px;
   background-size: cover;
   transform: translateX(-0px);
   background-position: center;
+  margin-bottom: 30px;
 }
 
 section#reason {

@@ -2,7 +2,7 @@
   border: 0px solid red;
 }
 .herobg {
-  background-image: url("/images/Artboard 4.png");
+  background-image: url("/images/ca9c325ed9eeda813ceb37d79038e26e.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -15,7 +15,7 @@
 .herobg .hero h2 {
   color: #fff;
   font-size: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   text-transform: capitalize;
   letter-spacing: 2px;
   font-weight: 700;
@@ -278,7 +278,7 @@ section#steps .cards .card .card-content {
 */
 #cta3 {
   margin-top: 0;
-  background-image: url("/images/marvin-meyer-SYTO3xs06fU-unsplash.jpg");
+  background-image: url("/images/20250905_155639.jpg");
   background-position: center;
   background-size: cover;
 }
