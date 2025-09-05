@@ -38,7 +38,7 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="features.css" />
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" />
   </head>
 
   <body>
@@ -67,7 +67,12 @@
     <div class="body">
       <div class="lightbg">
         <header>
-          <img src="images/logo.png" alt="logo" height="50px" class="w-fit w-[50px]"/>
+          <img
+            src="images/logo.png"
+            alt="logo"
+            height="50px"
+            class="w-fit w-[50px]"
+          />
           <div class="menu-btn" onclick="toggleMenu()">☰</div>
           <nav id="desktop-nav">
             <span onclick="closeNav()" class="closebtn">x</span>
@@ -91,7 +96,8 @@
                     class="lucide lucide-chevron-down-icon lucide-chevron-down"
                   >
                     <path d="m6 9 6 6 6-6" />
-                  </svg></span>
+                  </svg>
+                </span>
               </div>
               <div class="toggle-content">
                 <a href="contentstrategy&creation.html" style="font-size: 15px"
@@ -125,32 +131,35 @@
         </div>
         <section id="cta">
           <div class="container-xl">
-          <div class="text">
-            <h2 class="fade-in">Free Guide: Before You Launch That Brand</h2>
-            <p class="fade-in">
-              Starting your business? Let’s make sure your brand is built on
-              purpose — not guesswork. Get this free guide to clarify your
-              values, vision, and what makes your brand stand out. Drop your
-              email to get it sent straight to your inbox.
-            </p>
+            <div class="text">
+              <h2 class="fade-in text-xl">
+                Free Guide: Before You Launch That Brand
+              </h2>
+              <p class="fade-in">
+                Starting your business? Let’s make sure your brand is built on
+                purpose — not guesswork. Get this free guide to clarify your
+                values, vision, and what makes your brand stand out. Drop your
+                email to get it sent straight to your inbox.
+              </p>
+            </div>
+
+            <form action="" class="fade-in">
+              <label for="name"
+                >Full Name *
+                <input type="text" name="name" id="name" value="" />
+              </label>
+              <label for="email"
+                >Email*
+
+                <input type="text" name="name" id="name" value="" />
+              </label>
+              <button type="submit">Submit</button>
+            </form>
+            <div class="img fade-in"></div>
           </div>
-
-          <form action="" class="fade-in">
-            <label for="name"
-              >Full Name *
-              <input type="text" name="name" id="name" value="" />
-            </label>
-            <label for="email"
-              >Email*
-
-              <input type="text" name="name" id="name" value="" />
-            </label>
-            <button type="submit">Submit</button>
-          </form>
-          <div class="img fade-in"></div>
-        </div>
         </section>
         <section id="about">
+          <div class="about">
           <div class="text">
             <p class="heading fade-in">You bring the vision.</p>
             <h2 class="fade-in">
@@ -160,18 +169,20 @@
             <p class="subtext fade-in">
               At Waju Creative, I help service-based brands turn ideas into
               identities that feel authentic, look premium, and grow with
-              purpose. It’s not just about creating content — it’s about
+                              purpose. It’s not just about creating content — it’s about
               building a brand that stands out, connects, and converts.
             </p>
             <a href="about.html" class="fade-in">ABOUT THE FOUNDER</a>
           </div>
-
-          <img
-            src="/images/young-business-man-standing-front-stickers-glass-wall-looking-futures-plans-his-office-place.jpg"
-            alt="Founder Image"
-            width="100%"
-            class="fade-in"
-          />
+          <div class="img-full-wrapper">
+            <img
+              src="/images/young-business-man-standing-front-stickers-glass-wall-looking-futures-plans-his-office-place.jpg"
+              alt="Founder Image"
+              width="100%"
+              class="fade-in img-full"
+            />
+          </div>
+          </div>
         </section>
         <section id="whyus">
           <h2 class="fade-in">
@@ -273,162 +284,6 @@
             </div>
           </div>
         </section>
-        <section id="features">
-          <h2 class="fade-in">
-            OUR WORK AND AMAZING CLIENTS HAVE BEEN FEATURED ON
-          </h2>
-          <div class="slider">
-            <div class="slide-track">
-              <div class="slide">
-                <img
-                  src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png"
-                  alt=""
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png"
-                  alt=""
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png"
-                  alt=""
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png"
-                  alt=""
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png"
-                  alt=""
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png"
-                  alt=""
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png"
-                  alt=""
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png"
-                  alt=""
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png"
-                  alt=""
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png"
-                  alt=""
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png"
-                  alt=""
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png"
-                  alt=""
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png"
-                  alt=""
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png"
-                  alt=""
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png"
-                  alt=""
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png"
-                  alt=""
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png"
-                  alt=""
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="portfolio">
-          <p class="fade-in">EXPLORE OUR CREATIVE PORTFOLIO</p>
-          <h2 class="fade-in">
-            Take a look at some of the brands I’ve had the honor to help
-            elevate.
-          </h2>
-          <a href="about.html">Explore Portfolio</a>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  class=""
-                  src="/images/marvin-meyer-SYTO3xs06fU-unsplash.jpg"
-                  alt=""
-                  width="100%"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  class=""
-                  src="/images/IMG-20240815-WA0201.jpg"
-                  alt=""
-                  width="100%"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  class=""
-                  src="/images//images/Copywriting-cwebinar-2.jpg"
-                  alt=""
-                  width="100%"
-                />
-              </div>
-            </div>
-
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-        </section>
         <section id="testimonials">
           <h2 class="fade-in">What My Clients Have in Common</h2>
           <div class="text fade-in">
@@ -472,8 +327,8 @@
                   stroke-linejoin="round"
                   class="lucide lucide-chevron-down-icon lucide-chevron-down"
                 >
-                  <path d="m6 9 6 6 6-6" /></svg
-              ></span>
+                  <path d="m6 9 6 6 6-6" />
+                  </svg></span>
             </button>
             <div class="course-panel">
               <p>
@@ -500,8 +355,7 @@
                   stroke-linejoin="round"
                   class="lucide lucide-chevron-down-icon lucide-chevron-down"
                 >
-                  <path d="m6 9 6 6 6-6" /></svg
-              ></span>
+                  <path d="m6 9 6 6 6-6" /></svg></span>
             </button>
             <div class="course-panel">
               <p>
@@ -529,8 +383,7 @@
                   stroke-linejoin="round"
                   class="lucide lucide-chevron-down-icon lucide-chevron-down"
                 >
-                  <path d="m6 9 6 6 6-6" />
-                  </svg></span>
+                  <path d="m6 9 6 6 6-6" /></svg></span>
             </button>
             <div class="course-panel">
               <p>
@@ -543,6 +396,7 @@
           </div>
         </section>
         <section id="discovery">
+          <div class="discovery">
           <h2 class="fade-in">You’re Not Meant to Do It All.</h2>
           <br />
           <p class="fade-in">
@@ -567,7 +421,8 @@
           <br />
           <a href="contact.html">Book A Discovery Call</a>
           <!-- Slider main container -->
-        </section>
+        </div>
+      </section>
         <section id="follow">
           <h3 class="fade-in">
             FOLLOW AND CONNECT WITH US
@@ -593,7 +448,8 @@
             <div class="">
               Enail:
               <a href="#" style="display: inline-block"
-                >hello@wajucreative com</a>
+                >hello@wajucreative com</a
+              >
             </div>
           </div>
           <p style="padding: 30px 0px">© 2025 by Waju Creative Inc.</p>

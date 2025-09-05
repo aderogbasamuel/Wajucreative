@@ -63,6 +63,7 @@ html,
 body {
   width: 100%;
   color: var(--dark-grey);
+  font-size: 16px;
 }
 
 body {
@@ -408,6 +409,9 @@ nav .toggle-content a{
   background: var(--lightgrey);
   padding: 50px 45px;
 }
+#about .about{
+  max-width: 1200px
+}
 
 #about .heading {
   text-transform: uppercase;
@@ -424,8 +428,9 @@ nav .toggle-content a{
 }
 
 #about .subtext {
-  font-weight: 500;
+  font-weight: 450;
   margin-top: 8px;
+  font-size: 1.3rem;
 }
 
 #about a {
@@ -443,14 +448,16 @@ nav .toggle-content a{
 #about img {
   border: 1px solid var(--dark-grey);
   margin-top: 10px;
+
 }
 
 @media (min-width: 768px) {
-  #about {
+  #about .about{
     display: flex;
     padding: 5rem;
     gap: 2rem;
     align-items: flex-start;
+    flex-wrap: nowrap;
   }
   
   #about .text {
@@ -466,13 +473,10 @@ nav .toggle-content a{
   }
   
   #about p {
-    font-size: 20px;
+    font-size: 1.2rem;
   }
   
-  #about img {
-    width: 50%;
-    
-  }
+
 }
 
 #whyus {
@@ -637,11 +641,19 @@ nav .toggle-content a{
 #works h2 span {
   display: inline-block;
 }
-
+#works .cards {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  width: 100%;
+  
+}
 #works .card {
   padding: 20px 40px;
   text-align: left;
-  justify-content: left;
+  justify-content: center;
+  
 }
 
 #works .card h2 {
@@ -653,6 +665,7 @@ nav .toggle-content a{
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
+  max-width: 400px;
 }
 
 #works .card a {
@@ -687,6 +700,10 @@ nav .toggle-content a{
   
   #works .cards {
     padding: 5rem;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    width: 100%;
   }
   
   #works .cards .card {
@@ -775,6 +792,9 @@ section#portfolio a {
 section#testimonials {
   background: var(--moss-green);
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 section#testimonials .text {
@@ -791,8 +811,8 @@ section#testimonials .text .heading {
 
 section#testimonials .text .client_testimonial {
   font-size: 20px;
-  line-height: 20px;
   font-weight: 500;
+  max-width: 800px;
 }
 
 
@@ -841,11 +861,24 @@ footer {
   text-align: center;
   color: #fff;
   font-size: 20px;
+
 }
 
+#discovery .discovery{
+  max-width: 1200px;
+  width: 100%;
+    display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#discovery p{
+  max-width: 800px;
+}
 @media (min-width: 768px) {
   #discovery {
     padding: 50px 80px;
+
   }
 }
 
@@ -862,6 +895,7 @@ footer p {
   font-size: 15px;
   margin-top: 20px;
   padding: 0px 20px;
+  max-width: 800px;
 }
 
 footer form {
